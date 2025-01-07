@@ -1,10 +1,10 @@
 ---
 layout: single
-permalink: /
+permalink: /about2/
 title: "About Me"
 author_profile: true
 redirect_from: 
-  - /about/
+  - /about
   - /about.html
 ---
 <style>
