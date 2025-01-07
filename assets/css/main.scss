@@ -39,3 +39,10 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+@font-face {
+    font-family: "Source Sans 3 pro";
+    src: url("/assets/fonts/SourceSans3-SemiBold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
