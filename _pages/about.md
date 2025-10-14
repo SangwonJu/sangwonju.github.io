@@ -15,22 +15,16 @@ redirect_from:
 </style>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-.custom_font{
-  font-family: "Source Sans 3", serif;
-  font-optical-sizing: auto;
-  font-weight: 450;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 </style>
 
-<div style class= custom_font>
-<div style="width: 800px; margin-left: 0; text-align: justify;">
-<p>
-Hi! I'm <b>Sangwon</b>.<br>
-I'm currently a <b> Ph.D. student </b> <a href="https://www.american.edu/spa/dpap/index.cfm" target="_blank"> at School of Public Affairs, American University</a>. My research interests broadly lie in public management, organizational theory and behavior, behavioral public administration. I am also interested in research methods, particularly in the application of computational techniques (such as text analysis) and causal inference approach.<br>
 
-I aim to understand bureaucracy and bureaucrats. First, I study how both citizens and bureaucrats interact within organizational structures from a psycho-cognitive perspective and how structures can be designed to balance social equity and effectiveness. Second, I explore how public employees’ identity processes serve as the microfoundations of citizen–state interactions. Third, I examine how artificial intelligence, information systems, and bureaucratic discretion interact and how technology can be managed to improve societal outcomes.<br>
+<div style="width: 800px; margin-left: 01; text-align: justify; font-size: 17px;">
+<p>
+Hi! I'm Sangwon.<br>
+I'm currently a <b> Ph.D. student </b> <a href="https://www.american.edu/spa/dpap/index.cfm" target="_blank"> at School of Public Affairs, American University</a>. My research interests broadly lie in public management, organizational theory and behavior, behavioral public administration. I am also interested in research methods, particularly in the application of and experimental methods and computational techniques (such as text analysis).<br>
+<br>
+My current research agenda is as follows: (1) I study how citizens and bureaucrats interact within organizational structures from an institutional perspective, and how these structures can be designed to balance social equity and administrative effectiveness. (2) I conduct empirical research on the impact of artificial intelligence on democratic deliberation using experimental and text-analytic techniques. (3) I explore how public employees’ identity processes serve as the microfoundations of citizen–state interactions across different nations.<br>
 
 Other than research, I enjoy traveling to countries around the world: <a href="https://www.google.com/maps/d/u/0/edit?mid=1EL3lmIvsf7OJClETAXOsiJUonQRItdQ&usp=sharing" target="_blank">My Maps</a>.
 
@@ -60,13 +54,6 @@ Other than research, I enjoy traveling to countries around the world: <a href="h
 </ul>
 </p>
 </div>
-</div>
+
 
 <br>
-
-> <div style="width: 780px; text-align: justify; font-size: 0.9em">
-  Foundational ideas of justice can separate out some basic issues as being inescapably relevant, but they cannot plausibly end up, I have argued, with an exclusive choice of some highly delineated formula of relative weights as being the unique blueprint for ‘the just society’. (Sen, 1999: p. 286) </div>
-
->  <div style="width: 780px; text-align: justify; font-size: 0.9em">
-  Work for the elimination of concrete evils rather than for the realization of abstract goods. Do not aim at establishing happiness by political means. Rather aim at the elimination of concrete miseries. [...] But, do all this by direct means. (Popper, 1963: p. 360) </div>
-

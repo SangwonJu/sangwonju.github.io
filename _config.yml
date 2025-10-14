@@ -12,7 +12,7 @@ title                    : "Sangwon Ju | Personal Page"
 title_separator          : "-"
 name                     : &name "Sangwon Ju"
 description              : &description "This is Sangwon Ju's academic page"
-url                      : https://sangwonju.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "SangwonJu/sangwonju.github.io"
 
@@ -24,7 +24,7 @@ author:
   avatar           : "./SAM_0268.jpg"
   name             : "Sangwon Ju | 주상원"
   pronouns         : "He/His" # example: "she/her"  
-  bio              : "PhD student in Public Administration <br> @ American University, SPA <br> <br> <b> Interests: </b> <br>  Public Management, <br>  Organization Design, <br>  Identity and Social Identity Approach, <br> AI and Decision-making"  
+  bio              : "PhD student in Public Administration <br> @ American University, SPA <br> <br> <b> Interests: </b> <br>  Public Management, <br>  Organization Design, <br> Human-AI Interaction"  
   location         : "Washington DC, US & Seoul, Korea"
   uri              : "https://www.american.edu/profiles/students/sj6845a.cfm"
   email            : "sj6845a@american.edu" 
@@ -43,7 +43,6 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "SangwonJu"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
