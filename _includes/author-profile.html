@@ -25,16 +25,23 @@
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
-        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
+        <li class="author__desktop">
+          <span class="sidebar-icon sidebar-icon--location" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+              <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"></path>
+            </svg>
+          </span>{{ author.location }}
+        </li>
       {% endif %}
       {% if author.employer %}
         <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
       {% endif %}
       {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
+        <li><a href="{{ author.uri }}"><span class="sidebar-icon sidebar-icon--link" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M13.19 8.688a4.5 4.5 0 0 1 6.364 0l.758.758a4.5 4.5 0 0 1 0 6.364l-1.757 1.757a4.5 4.5 0 0 1-6.364 0l-1-1"></path><path d="M10.81 15.312a4.5 4.5 0 0 1-6.364 0l-.758-.758a4.5 4.5 0 0 1 0-6.364l1.757-1.757a4.5 4.5 0 0 1 6.364 0l1 1"></path></svg></span>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+        <li><a href="mailto:{{ author.email }}"><span class="sidebar-icon sidebar-icon--email" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M21.75 7.5v9.75A2.25 2.25 0 0 1 19.5 19.5h-15a2.25 2.25 0 0 1-2.25-2.25V7.5"></path><path d="M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h15a2.25 2.25 0 0 1 2.25 2.25"></path><path d="m3 7.5 7.976 5.317a1.875 1.875 0 0 0 2.048 0L21 7.5"></path></svg></span>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
@@ -42,7 +49,7 @@
         <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i>arXiv</a></li>
       {% endif %}      
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
+        <li><a href="{{ author.googlescholar }}"><span class="sidebar-icon sidebar-icon--scholar" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="m2.5 8 9.5-4 9.5 4-9.5 4-9.5-4Z"></path><path d="M6.5 10.2v4.2c0 2.043 2.462 3.7 5.5 3.7s5.5-1.657 5.5-3.7v-4.2"></path></svg></span>Google Scholar</a></li>
       {% endif %}
       {% if author.semantic %}
         <li><a href="{{ author.semantic }}"><i class="ai ai-semantic-scholar ai-fw icon-pad-right"></i>Semantic Scholar</a></li>
@@ -112,7 +119,7 @@
         <li><a href="https://last.fm/user/{{ author.lastfm }}"><i class="fab fa-fw fa-lastfm icon-pad-right" aria-hidden="true"></i>Last.fm</a></li>
       {% endif %}      
       {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><span class="sidebar-icon sidebar-icon--linkedin" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2.5"></rect><path d="M8 10.5V17"></path><path d="M8 7.5v.01"></path><path d="M12 17v-3.5a2.5 2.5 0 1 1 5 0V17"></path></svg></span>LinkedIn</a></li>
       {% endif %}      
       {% if author.mastodon %}
         <li><a href="{{ author.mastodon }}"><i class="fab fa-fw fa-mastodon icon-pad-right" aria-hidden="true"></i>Mastodon</a></li>

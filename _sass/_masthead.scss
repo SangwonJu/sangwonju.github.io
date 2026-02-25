@@ -4,8 +4,8 @@
 
 .masthead {
   position: fixed;
-  background: white;
-  border-bottom: 1px solid $border-color;
+  background: #0b2230;
+  border-bottom: 1px solid #081925;
   height: $masthead-height;
   top: 0;
   width: 100%;
@@ -23,7 +23,7 @@
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
-      max-width: $x-large;
+      max-width: 1400px;
     }
 
     nav {
@@ -34,6 +34,51 @@
       text-decoration: none;
     }
   }
+}
+
+.masthead .greedy-nav {
+  background: transparent;
+}
+
+.masthead .greedy-nav .visible-links > li > a {
+  color: #e2e8f0;
+}
+
+.masthead .greedy-nav .visible-links > li > a:hover,
+.masthead .greedy-nav .visible-links > li > a:focus,
+.masthead .greedy-nav .visible-links > li > a:active {
+  color: #93c5fd;
+}
+
+.masthead .greedy-nav .visible-links > li.active > a {
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.masthead .greedy-nav .visible-links > li > a:before {
+  background: #7fb3d5;
+}
+
+.masthead .greedy-nav .visible-links > li.active > a:before {
+  background: #93c5fd;
+  transform: scaleX(1);
+}
+
+.masthead .greedy-nav .visible-links > .masthead__menu-item--lg > a {
+  color: #f8fafc;
+}
+
+.masthead .greedy-nav button {
+  background-color: #185676;
+  color: #ffffff;
+}
+
+.masthead .greedy-nav .hidden-links a {
+  color: #0f172a;
+}
+
+.masthead .greedy-nav .hidden-links a:hover {
+  color: #185676;
 }
 
 .masthead__menu {
@@ -54,5 +99,13 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+
+    a {
+      font-size: 1.2em;
+
+      @include breakpoint($medium) {
+        font-size: 1.35em;
+      }
+    }
   }
 }

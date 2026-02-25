@@ -12,15 +12,15 @@
   animation-delay: 0.35s;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    max-width: 1400px;
   }
 }
 
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include prefix(0 of 12);
+    @include suffix(0 of 12);
   }
 
   .page__inner-wrap {
@@ -37,6 +37,8 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
+  color: #333333;
+  font-weight: 700;
 
   &+.page__meta {
     margin-top: -0.5em;
@@ -107,6 +109,118 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+}
+
+/* About page: readable measure and calmer link hierarchy */
+.about-compact {
+  max-width: 98ch;
+  margin-left: 6.5ch;
+  margin-right: auto;
+  letter-spacing: 0;
+  line-height: 1.62;
+  color: #333333;
+
+  h2 {
+    margin-top: 1.05em;
+  }
+
+  > h2:first-child {
+    margin-bottom: 0.6em;
+    padding-left: 3ch;
+  }
+
+  p {
+    margin-bottom: 0.95em;
+    font-size: 1.05em;
+  }
+
+  ul {
+    margin-top: 0.35em;
+    margin-bottom: 0.75em;
+  }
+
+  li {
+    margin-bottom: 0.3em;
+    font-size: 1.03em;
+    line-height: 1.55;
+  }
+
+  a {
+    color: #b45309;
+    text-decoration: underline;
+    text-decoration-thickness: 1.2px;
+    text-underline-offset: 0.14em;
+  }
+
+  a:hover,
+  a:focus {
+    color: #c66a2b;
+    text-decoration-thickness: 1.8px;
+  }
+
+  a:visited {
+    color: #9a3412;
+  }
+}
+
+.about-education {
+  margin-top: 0.35em;
+  margin-bottom: 0.25em;
+
+  > li {
+    margin-bottom: 0.4em;
+  }
+
+  ul {
+    margin-top: 0.15em;
+    margin-bottom: 0.2em;
+  }
+
+  ul > li {
+    margin-bottom: 0.12em;
+  }
+}
+
+.about-accent {
+  color: #b45309;
+  font-weight: 700;
+}
+
+.about-accent-soft {
+  color: #333333;
+  font-weight: 600;
+}
+
+.about-education > li > a {
+  color: #b45309;
+  font-weight: 700;
+
+  &:hover {
+    color: #c66a2b;
+  }
+
+  &:visited {
+    color: #9a3412;
+  }
+}
+
+.about-lower-black,
+.about-lower-black h2,
+.about-lower-black p,
+.about-lower-black li,
+.about-lower-black strong {
+  color: #111111;
+}
+
+.about-lower-black a,
+.about-lower-black a:hover,
+.about-lower-black a:focus,
+.about-lower-black a:visited,
+.about-lower-black .about-education > li > a,
+.about-lower-black .about-education > li > a:hover,
+.about-lower-black .about-education > li > a:focus,
+.about-lower-black .about-education > li > a:visited {
+  color: #111111;
 }
 
 .page__hero {

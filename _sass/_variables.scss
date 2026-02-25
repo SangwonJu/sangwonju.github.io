@@ -14,57 +14,83 @@
    Typography
    ========================================================================== */
 
-$doc-font-size : 16;
+$doc-font-size : 18;
 
 /* paragraph indentation */
 $paragraph-indent : false;
 $indent-var : 1.3em;
 
 /* system typefaces */
-$serif : "Times New Roman",
-Georgia,
-"Noto Serif KR",
-serif !default;
-$sans-serif : "Helvetica Neue",
-Arial,
+$serif : "Palatino Linotype",
+"Book Antiqua",
+Palatino,
+"Malgun Gothic",
 "Noto Sans KR",
-sans-serif !default;
+"Noto Serif KR",
+"Times New Roman",
+serif !default;
+$sans-serif : "Palatino Linotype",
+"Book Antiqua",
+Palatino,
+"Malgun Gothic",
+"Noto Sans KR",
+"Noto Serif KR",
+"Times New Roman",
+serif !default;
 $monospace : "Courier New",
 Courier,
 monospace !default;
 
 /* sans serif typefaces */
-$sans-serif-narrow : "Helvetica Neue",
-Arial,
+$sans-serif-narrow : "Palatino Linotype",
+"Book Antiqua",
+Palatino,
+"Malgun Gothic",
 "Noto Sans KR",
-sans-serif !default;
-$helvetica : "Helvetica Neue",
-Arial,
+"Noto Serif KR",
+"Times New Roman",
+serif !default;
+$helvetica : "Palatino Linotype",
+"Book Antiqua",
+Palatino,
+"Malgun Gothic",
 "Noto Sans KR",
-sans-serif !default;
+"Noto Serif KR",
+"Times New Roman",
+serif !default;
 
 /* serif typefaces */
 $georgia : Georgia,
+"Malgun Gothic",
+"Noto Sans KR",
 "Noto Serif KR",
 serif;
 $times : "Times New Roman",
+"Malgun Gothic",
+"Noto Sans KR",
 "Noto Serif KR",
 serif;
 $bodoni : "Bodoni MT",
 "Didot",
+"Malgun Gothic",
+"Noto Sans KR",
 "Noto Serif KR",
 serif;
 $calisto : "Calisto MT",
+"Malgun Gothic",
+"Noto Sans KR",
 "Noto Serif KR",
 serif;
 $garamond : "Garamond",
+"Malgun Gothic",
+"Noto Sans KR",
 "Noto Serif KR",
 serif;
 
 /* global families */
-$global-font-family : $sans-serif;
-$header-font-family : $sans-serif;
-$caption-font-family : $sans-serif;
+$global-font-family : $serif;
+$header-font-family : $serif;
+$caption-font-family : $serif;
 
 
 /* type scale */
@@ -100,10 +126,10 @@ $body-color : #fff;
 $background-color : #fff;
 $code-background-color : #fafafa;
 $code-background-color-dark : $light-gray;
-$text-color : $dark-gray;
+$text-color : #111111;
 $border-color : $lighter-gray;
 
-$primary-color : #7a8288;
+$primary-color : #111111;
 $success-color : #62c462;
 $warning-color : #f89406;
 $danger-color : #ee5f5b;
@@ -137,11 +163,11 @@ $xing-color : #006567;
 
 
 /* links */
-$link-color : $info-color;
-$link-color-hover : mix(#000, $link-color, 25%);
-$link-color-visited : mix(#fff, $link-color, 25%);
-$masthead-link-color : $primary-color;
-$masthead-link-color-hover : mix(#000, $primary-color, 25%);
+$link-color : #111111;
+$link-color-hover : #000000;
+$link-color-visited : #111111;
+$masthead-link-color : #1E3A8A;
+$masthead-link-color-hover : #1D4ED8;
 
 
 /*
