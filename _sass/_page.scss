@@ -223,6 +223,12 @@
   color: #111111;
 }
 
+.page__content.content-compact {
+  max-width: 98ch;
+  margin-left: 6.5ch;
+  margin-right: auto;
+}
+
 .page__hero {
   position: relative;
   margin-bottom: 2em;
