@@ -1,0 +1,21 @@
+Configuration file: G:/OneDrive - american.edu/GIT/sangwonju.github.io/_config.yml
+            Source: G:/OneDrive - american.edu/GIT/sangwonju.github.io
+       Destination: G:/OneDrive - american.edu/GIT/sangwonju.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 2.409 seconds.
+ Auto-regeneration: enabled for 'G:/OneDrive - american.edu/GIT/sangwonju.github.io'
+LiveReload address: http://127.0.0.1:35730
+    Server address: http://127.0.0.1:4001/
+  Server running... press ctrl-c to stop.
+      Regenerating: 1 file(s) changed at 2026-04-28 04:53:57
+                    _pages/about.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 1.3973781 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-28 04:54:00
+                    _pages/about.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 1.6093416 seconds.
+                    

@@ -12,7 +12,7 @@ redirect_from:
 <div class="about-compact">
   <p>Hi, I'm Sangwon. I am a Ph.D. student in Public Administration and Policy at <a href="https://www.american.edu/spa/dpap/index.cfm">American University School of Public Affairs</a>.</p>
 
-  <p>My research interests sit at the intersection of behavioral public administration, organizational theory and behavior, and computational social science.</p>
+  <p>I am a quantitative social scientist whose research interests sit at the intersection of public management, behavioral public administration, and computational social science.</p>
 
   <p>My research agenda focuses on two core questions: (1) how <strong>emerging technologies such as artificial intelligence</strong> shape bureaucratic behavior and citizens' evaluations of public organizations at the street level; and (2) how <strong>organizational design</strong>, especially organizational structure, and managerial practices jointly shape organizational outcomes. Across these projects, I draw on quantitative and computational approaches, including quasi-experimental designs, survey-based experiments, and text analysis, to study how public organizations adapt to changing administrative and technological environments.</p>
 
