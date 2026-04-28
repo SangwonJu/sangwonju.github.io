@@ -14,7 +14,7 @@ redirect_from:
 
   <p>My research interests sit at the intersection of behavioral public administration, organizational theory and behavior, and computational social science.</p>
 
-  <p>My research agenda focuses on two core questions: (1) how emerging technologies such as artificial intelligence shape bureaucratic behavior and citizens' evaluations of public organizations at the street level; and (2) how organizational design, especially organizational structure, and managerial practices jointly shape organizational outcomes. Across these projects, I draw on quantitative and computational approaches, including quasi-experimental designs, survey-based experiments, and text analysis, to study how public organizations adapt to changing administrative and technological environments.</p>
+  <p>My research agenda focuses on two core questions: (1) how <strong>emerging technologies such as artificial intelligence</strong> shape bureaucratic behavior and citizens' evaluations of public organizations at the street level; and (2) how <strong>organizational design</strong>, especially organizational structure, and managerial practices jointly shape organizational outcomes. Across these projects, I draw on quantitative and computational approaches, including quasi-experimental designs, survey-based experiments, and text analysis, to study how public organizations adapt to changing administrative and technological environments.</p>
 
   <div class="about-lower-black">
     <p>Other than research, I enjoy traveling to countries around the world: <a href="https://www.google.com/maps/d/u/0/edit?mid=1EL3lmIvsf7OJClETAXOsiJUonQRItdQ&ll=37.76217890117158%2C126.87913882121927&z=5">My Maps</a>.</p>
