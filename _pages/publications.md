@@ -10,7 +10,7 @@ Publications list is also available on [Google Scholar](https://scholar.google.c
 ## Peer-Reviewed Publications
 
 ### In English
-1. Lee, J., Ju, S., and Kim, B. J. (Forthcoming). Policy Compliance under Disagreement: The Joint Roles of Duty/Deterrence Beliefs, Symbolic Ideology, and Policy Environment. *Review of Policy Research*.
+1. Lee, J., Ju, S., and Kim, B. J. (2026). Policy Compliance under Disagreement: The Joint Roles of Duty/Deterrence Beliefs, Symbolic Ideology, and Policy Environment. *Review of Policy Research*, 43(2). [DOI: 10.1111/ropr.70084](https://doi.org/10.1111/ropr.70084)
 
 ### In Korean
 
@@ -20,4 +20,7 @@ Publications list is also available on [Google Scholar](https://scholar.google.c
 
 ## Manuscripts Under Review
 
-- Large Language Models and Conversational Counter-Argument to Anti-Public Sector Bias (with John Marvel, Sheeling Neo, and Rachel Cho), revise and resubmit at *Journal of Public Administration Research and Theory*. [Preprint DOI: 10.31234/osf.io/bva3r_v1](https://doi.org/10.31234/osf.io/bva3r_v1)
+- Large Language Models and Conversational Counter-Argument to Anti-Public Sector Bias (with John Marvel, Sheeling Neo, and Rachel Cho), revise and resubmit at *Journal of Public Administration Research and Theory*. Preprint at SSRN.
+- What is the Public Employee Identity? A Cross-National Examination (with Sheeling Neo), under review at *Journal of Public Administration Research and Theory*. Recipient of the 2025 APSA Volker Junior Scholar Research Grant.
+- Inoculating Citizens Against Sycophancy in Large Language Models (with John Marvel), under review at *Journal of Public Administration Research and Theory*. Preprint at SSRN.
+- Size is Interesting: Span of Control and Frontline Performance Management (with John Marvel), under review at *Public Administration Review*. Presented at PMRC 2025 and DC Consortium 2025.

@@ -10,11 +10,11 @@ redirect_from:
   - /about2.html
 ---
 <div class="about-compact">
-  <p>Hi, I'm Sangwon. I am a quantitative social scientist and Ph.D. student in Public Administration and Policy at <a href="https://www.american.edu/spa/dpap/index.cfm">American University School of Public Affairs</a>.</p>
+  <p>Hi, I'm Sangwon. I am a Ph.D. student in Public Administration and Policy at <a href="https://www.american.edu/spa/dpap/index.cfm">American University School of Public Affairs</a>.</p>
 
-  <p>I situate my work at the intersection of organizational theory and behavior, behavioral public administration, and computational social science.</p>
+  <p>My research interests sit at the intersection of behavioral public administration, organizational theory and behavior, and computational social science.</p>
 
-  <p><strong>My research agenda focuses on two core questions:</strong> <strong>(1)</strong> how <span class="about-accent">organizational design</span>, especially organizational structure, and managerial practices jointly shape organizational outcomes; and <strong>(2)</strong> how emerging technologies such as <span class="about-accent">artificial intelligence</span> transform bureaucratic behavior and citizens&rsquo; evaluations of public organizations at the street level. My research is theory-driven and employs rigorous empirical strategies, including quasi-experimental methods, survey-based experiments, and computational methods like text analysis.</p>
+  <p>My research agenda focuses on two core questions: (1) how emerging technologies such as artificial intelligence shape bureaucratic behavior and citizens' evaluations of public organizations at the street level; and (2) how organizational design, especially organizational structure, and managerial practices jointly shape organizational outcomes. Across these projects, I draw on quantitative and computational approaches, including quasi-experimental designs, survey-based experiments, and text analysis, to study how public organizations adapt to changing administrative and technological environments.</p>
 
   <div class="about-lower-black">
     <p>Other than research, I enjoy traveling to countries around the world: <a href="https://www.google.com/maps/d/u/0/edit?mid=1EL3lmIvsf7OJClETAXOsiJUonQRItdQ&ll=37.76217890117158%2C126.87913882121927&z=5">My Maps</a>.</p>
