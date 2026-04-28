@@ -1,11 +1,13 @@
 ---
 layout: single
-title: "Publications"
-permalink: /publications/
+title: "Research"
+permalink: /research/
 author_profile: true
+redirect_from:
+  - /publications/
 ---
 
-Publications list is also available on [Google Scholar](https://scholar.google.com/citations?user=BcDHI-UAAAAJ&hl=en).
+Research output is also available on [Google Scholar](https://scholar.google.com/citations?user=BcDHI-UAAAAJ&hl=en).
 
 ## Peer-Reviewed Publications
 
@@ -20,7 +22,7 @@ Publications list is also available on [Google Scholar](https://scholar.google.c
 
 ## Manuscripts Under Review
 
-- Large Language Models and Conversational Counter-Argument to Anti-Public Sector Bias (with John Marvel, Sheeling Neo, and Rachel Cho), revise and resubmit at *Journal of Public Administration Research and Theory*. Preprint at SSRN.
+- Large Language Models and Conversational Counter-Arguments to Anti-Public Sector Bias (with John Marvel, Sheeling Neo, and Rachel Cho), revise and resubmit at *Journal of Public Administration Research and Theory*. [Preprint DOI: 10.2139/ssrn.5603130](https://doi.org/10.2139/ssrn.5603130)
 - What is the Public Employee Identity? A Cross-National Examination (with Sheeling Neo), under review at *Journal of Public Administration Research and Theory*. Recipient of the 2025 APSA Volker Junior Scholar Research Grant.
-- Inoculating Citizens Against Sycophancy in Large Language Models (with John Marvel), under review at *Journal of Public Administration Research and Theory*. Preprint at SSRN.
+- Inoculating Citizens Against Sycophancy in Large Language Models (with John Marvel), under review at *Journal of Public Administration Research and Theory*. [Preprint DOI: 10.2139/ssrn.6630758](https://doi.org/10.2139/ssrn.6630758)
 - Size is Interesting: Span of Control and Frontline Performance Management (with John Marvel), under review at *Public Administration Review*. Presented at PMRC 2025 and DC Consortium 2025.
