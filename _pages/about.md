@@ -9,39 +9,52 @@ redirect_from:
   - /about2/
   - /about2.html
 ---
-<div class="about-compact">
-  <p>Hi, I'm Sangwon. I am a Ph.D. student in Public Administration and Policy at <a href="https://www.american.edu/spa/dpap/index.cfm">American University School of Public Affairs</a>.</p>
+<div class="home-cards">
+  <section class="home-card home-card--about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Sangwon. I am a Ph.D. Candidate in Public Administration and Policy at <a href="https://www.american.edu/spa/dpap/index.cfm">American University School of Public Affairs</a>.</p>
+    <p>I am a quantitative social scientist whose research interests lie at the intersection of public management, behavioral public administration, and computational social science.</p>
+    <p>My dissertation project, <em>Essays on Human-AI Interaction in Policy Implementation</em>, will examine how emerging technologies shape bureaucratic behavior and citizens' evaluations of public organizations at the street level. I also study how organizational design, especially organizational structure, and managerial practices jointly shape organizational outcomes.</p>
+    <p>Across these projects, I use quantitative and computational methods, including quasi-experiments, survey experiments, and text analysis, to study public organizations in changing administrative and technological environments. My work has been published or is forthcoming in peer-reviewed journals, including <em>Journal of Public Administration Research and Theory</em> and <em>Review of Policy Research</em>.</p>
+    <p class="home-card__note">Other than research, I enjoy traveling to countries around the world: <a href="https://www.google.com/maps/d/u/0/edit?mid=1EL3lmIvsf7OJClETAXOsiJUonQRItdQ&ll=37.76217890117158%2C126.87913882121927&z=5">My Maps</a>.</p>
+  </section>
 
-  <p>I am a quantitative social scientist whose research interests sit at the intersection of public management, behavioral public administration, and computational social science.</p>
+  <div class="home-card-grid">
+    <section class="home-card">
+      <h2>Research Interests</h2>
+      <ul class="home-list">
+        <li>Public Management</li>
+        <li>Behavioral Public Administration</li>
+        <li>Human-AI interaction</li>
+        <li>Policy Implementation</li>
+        <li>Organizational Theory/Behavior</li>
+        <li>Comparative Public Administration</li>
+        <li>Computational Social Science</li>
+      </ul>
+    </section>
 
-  <p>My research agenda focuses on two core questions: (1) how <strong>emerging technologies such as artificial intelligence</strong> shape bureaucratic behavior and citizens' evaluations of public organizations at the street level; and (2) how <strong>organizational design</strong>, especially organizational structure, and managerial practices jointly shape organizational outcomes. Across these projects, I draw on quantitative and computational approaches, including quasi-experimental designs, survey-based experiments, and text analysis, to study how public organizations adapt to changing administrative and technological environments.</p>
-
-  <div class="about-lower-black">
-    <p>Other than research, I enjoy traveling to countries around the world: <a href="https://www.google.com/maps/d/u/0/edit?mid=1EL3lmIvsf7OJClETAXOsiJUonQRItdQ&ll=37.76217890117158%2C126.87913882121927&z=5">My Maps</a>.</p>
-
-    <h2>Education</h2>
-
-    <ul class="about-education">
-      <li>
-        <a href="https://www.american.edu/spa/dpap/index.cfm">American University, SPA</a>, Washington DC, United States | 2024 -
-        <ul>
-          <li><strong>Ph.D Student</strong> in Public Administration &amp; Policy</li>
-        </ul>
-      </li>
-      <li>
-        <a href="http://gspa.snu.ac.kr/en">Seoul National University, GSPA</a>, Seoul, Republic of Korea | 2021 - 2024
-        <ul>
-          <li><strong>Ph.D Student</strong> in Public Policy</li>
-          <li><strong>M.P.P.</strong> in Public Policy</li>
-        </ul>
-      </li>
-      <li>
-        <a href="https://yupa.yonsei.ac.kr/yupa_en/index.do">Yonsei University, College of Social Science</a>, Seoul, Republic of Korea | 2015 - 2021
-        <ul>
-          <li><strong>B.A.</strong> in Public Administration and <strong>B.B.A.</strong> in Business Administration</li>
-          <li><strong>Minor</strong> in Applied Statistics</li>
-        </ul>
-      </li>
-    </ul>
+    <section class="home-card">
+      <h2>Education</h2>
+      <ul class="home-education">
+        <li>
+          <strong><a href="https://www.american.edu/spa/dpap/index.cfm">American University, SPA</a></strong>
+          <span class="home-education__detail">Ph.D. Candidate in Public Administration &amp; Policy</span>
+          <span class="home-education__date">2024 -</span>
+        </li>
+        <li>
+          <strong><a href="http://gspa.snu.ac.kr/en">Seoul National University, GSPA</a></strong>
+          <span class="home-education__detail">Ph.D. Student in Public Policy</span>
+          <span class="home-education__detail">M.P.P. in Public Policy</span>
+          <span class="home-education__date">2021 - 2024</span>
+        </li>
+        <li>
+          <strong><a href="https://yupa.yonsei.ac.kr/yupa_en/index.do">Yonsei University, College of Social Science</a></strong>
+          <span class="home-education__detail">B.A. in Public Administration</span>
+          <span class="home-education__detail">B.B.A. in Business Administration</span>
+          <span class="home-education__detail">Minor in Applied Statistics</span>
+          <span class="home-education__date">2015 - 2021</span>
+        </li>
+      </ul>
+    </section>
   </div>
 </div>

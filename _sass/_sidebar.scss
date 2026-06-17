@@ -86,6 +86,52 @@
   }
 }
 
+.home-main .sidebar--home {
+  @include breakpoint($large) {
+    float: none;
+    width: 280px;
+    max-width: 280px;
+    margin: 0;
+    padding-right: 0;
+  }
+
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    position: sticky;
+    top: calc(#{$masthead-height} + 1.5rem);
+    height: auto;
+    max-height: calc(100vh - #{$masthead-height} - 2rem);
+    padding-top: 0;
+    overflow-y: auto;
+  }
+
+  > div[itemscope] {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.profile-wide-main:not(.home-main) .sidebar--profile-wide {
+  @include breakpoint($large) {
+    float: none;
+    width: 280px;
+    max-width: 280px;
+    margin: 0;
+    padding-right: 0;
+  }
+
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    position: sticky;
+    top: calc(#{$masthead-height} + 1.5rem);
+    height: auto;
+    max-height: calc(100vh - #{$masthead-height} - 2rem);
+    padding-top: 0;
+    overflow-y: auto;
+  }
+}
+
 /*
    Author profile and links
    ========================================================================== */
@@ -110,6 +156,19 @@
     @include breakpoint($large) {
       padding: 5px;
       border: 1px solid $border-color;
+    }
+  }
+}
+
+.sidebar--profile-wide .author__avatar {
+  @include breakpoint($large) {
+    text-align: center;
+  }
+
+  img {
+    @include breakpoint($large) {
+      width: 100%;
+      max-width: 220px;
     }
   }
 }

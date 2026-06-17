@@ -1,7 +1,12 @@
 {% include base_path %}
 
+{% assign profile_wide_page = false %}
+{% if page.url == "/" or page.url == "/cv/" or page.url == "/research/" or page.url == "/teaching/" %}
+  {% assign profile_wide_page = true %}
+{% endif %}
+
 {% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
+  <div class="sidebar sticky{% if page.url == "/" %} sidebar--home{% endif %}{% if profile_wide_page %} sidebar--profile-wide{% endif %}">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
