@@ -13,7 +13,7 @@ redirect_from:
   <section class="home-card home-card--about">
     <h2>About Me</h2>
     <p>Hi, I'm Sangwon. I am a Ph.D. Candidate in Public Administration and Policy at <a href="https://www.american.edu/spa/dpap/index.cfm">American University School of Public Affairs</a>.</p>
-    <p>I am a quantitative social scientist whose research interests lie at the intersection of public management, behavioral public administration, and computational social science.</p>
+    <p>I'm a quantitative social scientist with research interests at the intersection of public management, behavioral public administration, and computational social science.</p>
     <p>My dissertation project, <em>Essays on Human-AI Interaction in Policy Implementation</em>, will examine how emerging technologies shape bureaucratic behavior and citizens' evaluations of public organizations at the street level. I also study how organizational design, especially organizational structure, and managerial practices jointly shape organizational outcomes.</p>
     <p>Across these projects, I use quantitative and computational methods, including quasi-experiments, survey experiments, and text analysis, to study public organizations in changing administrative and technological environments. My work has been published or is forthcoming in peer-reviewed journals, including <em>Journal of Public Administration Research and Theory</em> and <em>Review of Policy Research</em>.</p>
     <p class="home-card__note">Other than research, I enjoy traveling to countries around the world: <a href="https://www.google.com/maps/d/u/0/edit?mid=1EL3lmIvsf7OJClETAXOsiJUonQRItdQ&ll=37.76217890117158%2C126.87913882121927&z=5">My Maps</a>.</p>
