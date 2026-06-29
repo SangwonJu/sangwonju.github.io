@@ -24,15 +24,15 @@ Research output is also available on [Google Scholar](https://scholar.google.com
 
 ## Manuscripts Under Review
 
-- What is Public Employee Identity? A Cross-National Examination (with Sheeling Neo), under review at *Journal of Public Administration Research and Theory*. Presented at PMRC 2025 and EGPA 2025.
 - Inoculating Citizens Against Anti-Government Sycophancy in Large Language Models (with John D. Marvel), under review at *Journal of Public Administration Research and Theory*. Presented at PMRC 2026 and APSA 2026. [Preprint DOI: 10.2139/ssrn.6630758](https://doi.org/10.2139/ssrn.6630758)
 - Size is Interesting: Span of Control and Frontline Performance Management (with John D. Marvel), under review at *Public Administration Review*. Presented at PMRC 2025 and DC Consortium 2025.
+- Structural Publicness in the Eyes of Citizens: Experimental Evidence on Tradeoffs in the U.S. and South Korea (with Kenneth J. Meier), under review at *Public Administration*. Presented at MPSA 2026.
 
 ## Work in Progress
 
 ### Manuscript Available
 
-- Structural Publicness in the Eyes of Citizens: Experimental Evidence on Tradeoffs in the U.S. and South Korea (with Kenneth J. Meier). Presented at MPSA 2026.
+- What is Public Employee Identity? A Cross-National Examination (with Sheeling Neo). Presented at PMRC 2025 and EGPA 2025.
 - The Long-Run Consequence of Female Teacher Representation: A Natural Experiment in Korea (with Kenneth J. Meier).
 - Maximizing Efficiency with a Within-Subjects' Forced-Choice Design (with Kenneth J. Meier and Grant Mobley). [Preprint DOI: 10.2139/ssrn.6182359](https://doi.org/10.2139/ssrn.6182359)
 - Debiasing the Undebiasable? Motivated Reasoning, Political Sophistication, and LLMs in Citizen Performance Evaluation (with John D. Marvel).
@@ -41,5 +41,5 @@ Research output is also available on [Google Scholar](https://scholar.google.com
 ### Data Analysis / Experimental Design Stage
 
 - Comparative Analysis on Organizational Structure and Autonomy (with Kenneth J. Meier).
-- Ideological Asymmetries in Selection into LLM Sycophancy (with John D. Marvel and Eli Lee).
+- Ideological Asymmetries in Selection into LLM Sycophancy (with John D. Marvel).
 - LLM Sycophancy and Moral Disempowerment among Street-Level Bureaucrats (with Sheeling Neo; Dissertation Essay 1).
