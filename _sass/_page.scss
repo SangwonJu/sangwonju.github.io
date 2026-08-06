@@ -195,7 +195,7 @@
 }
 
 .home-card {
-  padding: 0.85rem 0.95rem;
+  padding: 1rem 1.1rem;
   background: #ffffff;
   border: 1px solid #d8dee6;
   border-radius: 6px;
@@ -238,6 +238,12 @@
       color: #004fa2;
     }
   }
+}
+
+.home-card--about {
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid #004fa2;
 }
 
 .home-card__note {
@@ -412,6 +418,22 @@
   max-width: 98ch;
   margin-left: 4.5ch;
   margin-right: auto;
+}
+
+.content-compact > h2 {
+  margin-top: 1.9rem;
+  color: #182449;
+}
+
+.content-compact > h3 {
+  margin-top: 1.25rem;
+  color: #334155;
+}
+
+.content-compact > ol li,
+.content-compact > ul li {
+  margin-bottom: 0.62rem;
+  line-height: 1.55;
 }
 
 .page__hero {

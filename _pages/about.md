@@ -2,6 +2,7 @@
 layout: single
 permalink: /
 title: "About"
+excerpt: "Sangwon Ju studies street-level accountability, human-AI interaction, and policy implementation."
 author_profile: true
 redirect_from:
   - /about/
@@ -13,9 +14,10 @@ redirect_from:
   <section class="home-card home-card--about">
     <h2>About Me</h2>
     <p>Hi, I'm Sangwon. I am a Ph.D. Candidate in Public Administration and Policy at <a href="https://www.american.edu/spa/dpap/index.cfm">American University School of Public Affairs</a>.</p>
-    <p>I'm a quantitative social scientist with research interests at the intersection of public management, behavioral public administration, and computational social science.</p>
-    <p>My dissertation project, <em>Essays on Human-AI Interaction in Policy Implementation</em>, will examine how emerging technologies shape bureaucratic behavior and citizens' evaluations of public organizations at the street level. I also study how organizational design, especially organizational structure, and managerial practices jointly shape organizational outcomes.</p>
-    <p>Across these projects, I use quantitative and computational methods, including quasi-experiments, survey experiments, and text analysis, to study public organizations in changing administrative and technological environments. My work has been published or is forthcoming in peer-reviewed journals, including <em>Journal of Public Administration Research and Theory</em> and <em>Review of Policy Research</em>.</p>
+    <p>I'm a quantitative social scientist working at the intersection of public management, behavioral public administration, and computational social science. My dissertation project studies questions of accountability at the street level, taking a behavioral approach to how emerging technologies reshape citizen–state relationships.</p>
+    <p>Street-level accountability has never had a settled answer: discretion is hard to observe, and the standards for evaluating frontline decisions often remain contested. Specifically, I ask how these dynamics shift once generative artificial intelligence enters the process. Using experimental and computational methods in education and immigration contexts, I examine how citizens and public employees form judgments under algorithmic intermediation, what this means for bureaucrats' moral agency, and what it implies for democratic accountability.</p>
+    <p>Beyond the dissertation, I study how organizational structure conditions policy implementation. From an institutional perspective, I examine how structure shapes citizen–bureaucrat interactions and, through them, policy outcomes.</p>
+    <p>My work has been published or is forthcoming in peer-reviewed journals, including <em>Journal of Public Administration Research and Theory</em> and <em>Review of Policy Research</em>.</p>
     <p class="home-card__note">Other than research, I enjoy traveling to countries around the world: <a href="https://www.google.com/maps/d/u/0/edit?mid=1EL3lmIvsf7OJClETAXOsiJUonQRItdQ&ll=37.76217890117158%2C126.87913882121927&z=5">My Maps</a>.</p>
   </section>
 
@@ -39,20 +41,20 @@ redirect_from:
         <li>
           <strong><a href="https://www.american.edu/spa/dpap/index.cfm">American University, SPA</a></strong>
           <span class="home-education__detail">Ph.D. Candidate in Public Administration &amp; Policy</span>
-          <span class="home-education__date">2024 -</span>
+          <span class="home-education__date">2024–Present</span>
         </li>
         <li>
           <strong><a href="http://gspa.snu.ac.kr/en">Seoul National University, GSPA</a></strong>
           <span class="home-education__detail">Ph.D. Student in Public Policy</span>
           <span class="home-education__detail">M.P.P. in Public Policy</span>
-          <span class="home-education__date">2021 - 2024</span>
+          <span class="home-education__date">2021–2024</span>
         </li>
         <li>
           <strong><a href="https://yupa.yonsei.ac.kr/yupa_en/index.do">Yonsei University, College of Social Science</a></strong>
           <span class="home-education__detail">B.A. in Public Administration</span>
           <span class="home-education__detail">B.B.A. in Business Administration</span>
           <span class="home-education__detail">Minor in Applied Statistics</span>
-          <span class="home-education__date">2015 - 2021</span>
+          <span class="home-education__date">2015–2021</span>
         </li>
       </ul>
     </section>

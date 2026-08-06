@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Teaching"
+excerpt: "Teaching experience of Sangwon Ju at American University and Seoul National University."
 permalink: /teaching/
 author_profile: true
 ---
