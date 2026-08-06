@@ -14,7 +14,7 @@ redirect_from:
   <section class="home-card home-card--about">
     <h2>About Me</h2>
     <p>Hi, I'm Sangwon. I am a Ph.D. Candidate in Public Administration and Policy at <a href="https://www.american.edu/spa/dpap/index.cfm">American University School of Public Affairs</a>.</p>
-    <p>I'm a quantitative social scientist working at the intersection of public management, behavioral public administration, and computational social science.</p>
+    <p>I'm a quantitative social scientist whose research interests lie at the intersection of public management, behavioral public administration, and computational social science.</p>
     <p>My dissertation project examines street-level accountability, taking a behavioral approach to how generative artificial intelligence reshapes citizen–state relationships. Using experimental and computational methods, I study how citizens and public employees form judgments under algorithmic intermediation, what this means for bureaucrats' moral agency, and what it implies for democratic accountability.</p>
     <p>Beyond the dissertation, I study how organizational structure conditions policy implementation. From an institutional perspective, I examine how structure shapes citizen–bureaucrat interactions and, through them, policy outcomes.</p>
     <p>My work has been published or is forthcoming in peer-reviewed journals, including <em>Journal of Public Administration Research and Theory</em> and <em>Review of Policy Research</em>.</p>
