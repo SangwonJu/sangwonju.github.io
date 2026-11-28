@@ -1517,3 +1517,31 @@ html body nav.site-nav .navbar-nav .nav-link {
 .cv-pages-fallback {
     padding: 1rem 0;
 }
+
+/* Footer: one 40px gap above it on every page, and a slimmer bar */
+html body.page-home main .home-card:last-child,
+html body.page-home main .col-lg-8 > section:last-of-type {
+    margin-bottom: 0 !important;
+}
+html body.page-home main .home-card__foot {
+    padding-bottom: 0 !important;
+}
+html body .footer {
+    margin-top: 40px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+html body .footer .row {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+@media (max-width: 575.98px) {
+    html body .footer .row > .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    html body .footer .row > .col-6 .text-right {
+        text-align: left !important;
+        margin-top: 2px;
+    }
+}
