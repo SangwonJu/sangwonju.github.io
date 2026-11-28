@@ -23,3 +23,7 @@ timezone: America/New_York
 collections:
   - publications
   - news
+
+# Google Analytics 4 (loaded only in the production build, i.e. on GitHub Pages)
+analytics:
+  google_measurement_id: G-2JLWERWXFT

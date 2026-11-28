@@ -28,6 +28,7 @@
     <meta property="og:image" content="{{ site.data.profile.portrait_url | absolute_url }}">
     <meta name="twitter:card" content="summary">
     <meta name="theme-color" content="#ffffff">
+    {% include analytics.html %}
 </head>
 <body class="bg-light d-flex flex-column min-vh-100{% if page.url == "/" %} page-home{% elsif page.navbar_title %} page-{{ page.navbar_title | downcase }}{% endif %}" {{ page.body_attr }}>
     <a class="skip-link" href="#main">Skip to content</a>
