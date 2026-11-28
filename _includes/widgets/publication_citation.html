@@ -1,0 +1,38 @@
+{% comment %}
+  One publication as an author–year citation (as on the old site):
+  Last, First, A. Name, and B. Name. YEAR. "Title." Journal vol (issue): pages. doi
+  followed by the one-line summary, the folding abstract and an optional cover.
+{% endcomment %}
+{% assign item = include.item %}
+{% assign doi = item.links.DOI %}
+{% assign n = item.authors | size %}
+<li class="cite">
+    <p class="cite__line">
+        {%- for a in item.authors -%}
+            {%- assign parts = a | split: " " -%}
+            {%- if forloop.first -%}
+                {%- assign last = parts | last -%}
+                {%- assign firsts = parts | pop | join: " " -%}
+                {%- assign shown = last | append: ", " | append: firsts -%}
+            {%- else -%}
+                {%- assign shown = a -%}
+            {%- endif -%}
+            {%- if forloop.last and n > 1 %}, and {% elsif forloop.first == false %}, {% endif -%}
+            {%- if a == "Sangwon Ju" -%}<strong>{{ shown }}</strong>{%- else -%}{{ shown }}{%- endif -%}
+        {%- endfor -%}
+        . {{ item.pub_date }}. &ldquo;{{ item.title }}.&rdquo; <i>{{ item.pub }}</i>{{ item.pub_post }}
+        {% if doi %}<a class="cite__doi" href="{{ doi }}" target="_blank" rel="noopener">{{ doi | remove: "https://doi.org/" | prepend: "doi:" }}</a>{% endif %}
+    </p>
+    {% if item.cover %}
+    <div class="pub-with-cover">
+        <div class="pub-with-cover__body">
+            {% include widgets/publication_rest.html item=item %}
+        </div>
+        <a class="pub-cover" href="{{ item.cover_full | default: item.cover | relative_url }}" target="_blank" rel="noopener">
+            <img src="{{ item.cover | relative_url }}" alt="{{ item.cover_alt | default: item.title }}" width="640" height="341" loading="lazy">
+        </a>
+    </div>
+    {% else %}
+    {% include widgets/publication_rest.html item=item %}
+    {% endif %}
+</li>

@@ -1,0 +1,14 @@
+{% assign publications = include.publications %}
+<section class="home-card bg-white shadow-sm rounded-xl">
+    <div class="home-card__head">
+        <h2 class="home-card__title">{% if include.title %}{{ include.title }}{% else %}Selected Publications{% endif %}</h2>
+    </div>
+    <div class="home-card__list">
+        {% for item in publications limit:include.limit %}
+            {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last %}
+        {% endfor %}
+    </div>
+    <div class="home-card__foot">
+        <a href="{{ '/research/' | relative_url }}">All research</a>
+    </div>
+</section>

@@ -1,31 +1,46 @@
----
-layout: compress
----
+<!DOCTYPE html>
+<html lang="en">
+<!-- Template: https://github.com/luost26/academic-homepage -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
 
-{% include base_path %}
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400..800;1,400..800&family=Literata:opsz,wght@7..72,500..700&family=Figtree:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    <link rel="icon" href="{{ '/favicon-32.png' | relative_url }}?v=au" type="image/png" sizes="32x32">
+    <link rel="alternate icon" href="{{ '/favicon.ico' | relative_url }}?v=au">
+    <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}?v=au">
+    {% assign page_desc = page.description | default: site.description %}
+    {% assign share_title = page.title | append: " - " | append: site.data.profile.navbar_name %}
+    {% if page.url == "/" %}{% assign share_title = site.data.profile.navbar_name | append: " | Public Administration and Policy, American University" %}{% endif %}
+    <meta name="description" content="{{ page_desc }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.data.profile.navbar_name }}">
+    <meta property="og:title" content="{{ share_title }}">
+    <meta property="og:description" content="{{ page_desc }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ site.data.profile.portrait_url | absolute_url }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100{% if page.url == "/" %} page-home{% elsif page.navbar_title %} page-{{ page.navbar_title | downcase }}{% endif %}" {{ page.body_attr }}>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {% include navbar.html %}
+    <main id="main" tabindex="-1" class="flex-grow-1 flex-shrink-0 {% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
+        {% unless page.url == "/" %}<h1 class="sr-only">{{ page.title }} - {{ site.data.profile.navbar_name }}</h1>{% endunless %}
+        {{content}}
+    </main>
+    {% include footer.html %}
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
-  </body>
+    <!-- Scripts: jQuery + Bootstrap for the phone menu only -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+    {% if page.url == "/" %}<script src="{{ '/assets/js/home-fold.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>{% endif %}
+</body>
 </html>

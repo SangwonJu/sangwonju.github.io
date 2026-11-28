@@ -1,15 +1,10 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-
-main:
-  - title: "About"
-    url: /
-  - title: "CV"
-    url: /cv/
-  - title: "Research"
-    url: /research/
-  - title: "Teaching"
-    url: /teaching/
+pages:
+# NOTE: `name` must match the `navbar_title` front matter of the page so the navbar highlights it.
+- name: About
+  url: /
+- name: Research
+  url: /research/
+- name: Teaching
+  url: /teaching/
+- name: CV
+  url: /cv/

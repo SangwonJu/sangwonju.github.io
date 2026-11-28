@@ -1,0 +1,25 @@
+{% assign item = include.item %}
+{% if item.abstract %}
+<p class="mt-1 mb-0 small text-muted">{{ item.abstract }}</p>
+{% endif %}
+{% assign other_links = 0 %}
+{% for link in item.links %}{% unless link[0] == "DOI" %}{% assign other_links = other_links | plus: 1 %}{% endunless %}{% endfor %}
+{% if other_links > 0 %}
+<p class="small pb-0 mb-0 mt-1 lh-125 text-muted abstract-links">
+    {% for link in item.links %}
+    {% unless link[0] == "DOI" %}
+    {% if link[1].url %}
+    <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
+    {% else %}
+    <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
+    {% endif %}
+    {% endunless %}
+    {% endfor %}
+</p>
+{% endif %}
+{% if item.full_abstract %}
+<details class="pub-abstract small mt-1">
+    <summary>Abstract</summary>
+    <p class="mt-2 mb-0">{{ item.full_abstract }}</p>
+</details>
+{% endif %}

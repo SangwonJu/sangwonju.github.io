@@ -1,0 +1,72 @@
+<div class="row sticky-top profile-sticky">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white profile-card">
+            <div class="card-body px-4 pt-4 pb-3">
+                <div class="row">
+                    <div class="col">
+                        {% if site.data.profile.portrait_url %}
+                        <!-- When the screen is wider than md, float the portrait on the right -->
+                        <div class="figure d-none d-md-block w-100 text-center">
+                            <img
+                                src="{{ site.data.profile.portrait_url | relative_url }}"
+                                class="figure-img img-fluid rounded-circle profile-portrait"
+                                width="200" height="200"
+                                alt="Portrait of {{ site.data.profile.primary_name }}">
+                        </div>
+                        <div class="mb-3 d-md-none text-center">
+                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle profile-portrait profile-portrait--phone" width="200" height="200" alt="Portrait of {{ site.data.profile.primary_name }}">
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="h4 mb-0 profile-name">{{ site.data.profile.primary_name }}</h1>
+                        {% if site.data.profile.secondary_name != "" %}<div class="profile-lines text-muted font-weight-normal mt-1 no-break">{{ site.data.profile.secondary_name }}</div>{% endif %}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col text-center profile-lines">
+                        {% for position in site.data.profile.positions %}
+                        <div class="no-break">{{ position.name }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="row small">
+                    <div class="col text-center">
+                        <a class="email-text" href="mailto:{{ site.data.profile.email | encode_email }}">
+                            {{ site.data.profile.email | replace: "@", "(at)" }}
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row pt-2">
+                    <div class="col">
+                        {%- if site.data.profile.gscholar contains 'scholar.google' -%}
+                        {%- assign gscholar_url = site.data.profile.gscholar -%}
+                        {%- else -%}
+                        {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
+                        {%- endif %}
+                        <!-- Links carried over from the old site: line icons with labels, 2 x 2 -->
+                        <ul class="profile-links">
+                            {% if site.data.profile.au_profile %}
+                            <li><a href="{{ site.data.profile.au_profile }}" target="_blank" rel="noopener"><span class="line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M3 9.5 12 4.5l9 5"></path><path d="M4 9.5h16"></path><path d="M6.5 12v5.5"></path><path d="M10.17 12v5.5"></path><path d="M13.83 12v5.5"></path><path d="M17.5 12v5.5"></path><path d="M3.5 20h17"></path></svg></span>AU Profile</a></li>
+                            {% endif %}
+                            {% if site.data.profile.gscholar %}
+                            <li><a href="{{ gscholar_url }}" target="_blank" rel="noopener"><span class="line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="m2.5 8 9.5-4 9.5 4-9.5 4-9.5-4Z"></path><path d="M6.5 10.2v4.2c0 2.043 2.462 3.7 5.5 3.7s5.5-1.657 5.5-3.7v-4.2"></path></svg></span>Google Scholar</a></li>
+                            {% endif %}
+                            {% if site.data.profile.orcid %}
+                            <li><a href="https://orcid.org/{{ site.data.profile.orcid }}" target="_blank" rel="noopener"><span class="line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="9.25"></circle><path d="M8.75 10.5v6"></path><path d="M8.75 7.5v.01"></path><path d="M11.75 16.5v-9h1.75a4.5 4.5 0 0 1 0 9Z"></path></svg></span>ORCID</a></li>
+                            {% endif %}
+                            {% if site.data.profile.linkedin %}
+                            <li><a href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" target="_blank" rel="noopener"><span class="line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2.5"></rect><path d="M8 10.5V17"></path><path d="M8 7.5v.01"></path><path d="M12 17v-3.5a2.5 2.5 0 1 1 5 0V17"></path></svg></span>LinkedIn</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

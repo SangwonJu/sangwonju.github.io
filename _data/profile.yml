@@ -1,0 +1,108 @@
+primary_name: "Sangwon Ju"
+secondary_name: "He/Him | 주상원"
+navbar_name: "Sangwon Ju"
+
+positions:
+- name: Ph.D. Student in Public Administration
+- name: School of Public Affairs, American University
+
+email: "sj6845a@american.edu"
+cv_link: /cv/
+gscholar: BcDHI-UAAAAJ
+linkedin: sangwon-ju-37a6b0216
+au_profile: https://www.american.edu/profiles/students/sj6845a.cfm
+orcid: 0009-0003-3286-8189
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    <strong>Welcome!</strong> I am a doctoral student in Public Administration and Policy at
+    <a href="https://www.american.edu/spa/dpap/index.cfm" target="_blank">American University's School of Public Affairs</a>.
+    I study policy implementation from a public management perspective. My work focuses on how
+    frontline bureaucrats and the citizens they serve form attitudes and make decisions through a behavioral lens.
+  </p>
+  <p>
+    The first line of my research examines how generative AI may reshape bureaucratic discretion and
+    accountability and whether it can improve citizen evaluations of government. The second takes an
+    institutional perspective and asks how organizational structure shapes policy implementation.
+    I answer these questions using experimental and quasi-experimental designs as well as
+    computational methods built on large language models.
+  </p>
+  <p>
+    I am currently working on a survey experiment examining how LLMs may influence the moral
+    judgment of frontline workers and whether friction can counter their potential risks.
+    My research appears in the <em>Journal of Public Administration Research and Theory</em>
+    and the <em>Review of Policy Research</em>.
+  </p>
+  <p>
+    Outside of research, I enjoy traveling. You can see where I've been on
+    <a href="https://www.google.com/maps/d/viewer?mid=1EL3lmIvsf7OJClETAXOsiJUonQRItdQ" target="_blank">my map</a>.
+  </p>
+
+research_interests:
+- Public Management
+- Human-AI Interaction in Policy Implementation
+- Citizen-State Interaction
+- Behavioral Public Administration
+- Organizational Theory and Behavior
+- Computational Social Science
+
+portrait_url: /assets/images/photos/portrait.jpg
+
+# `logo` is optional for every entry below. A school with several degrees lists them under `degrees`.
+education:
+- name: American University
+  url: https://www.american.edu/spa/dpap/index.cfm
+  logo: /assets/images/badges/au-a-32.png
+  dept: Department of Public Administration and Policy, School of Public Affairs
+  degrees:
+  - position: Ph.D. Student in Public Administration and Policy
+    date: 2024 - present
+- name: Seoul National University
+  url: http://gspa.snu.ac.kr/en
+  logo: /assets/images/badges/snu-64.png
+  dept: Graduate School of Public Administration
+  degrees:
+  - position: Ph.D. Student in Public Policy
+    date: 2023 - 2024
+  - position: Master of Public Policy
+    date: 2021 - 2023
+- name: Yonsei University
+  url: https://yupa.yonsei.ac.kr/yupa_en/index.do
+  logo: /assets/images/badges/yonsei-64.png
+  dept: B.A. in Public Administration &amp; B.B.A. in Business Administration
+  degrees:
+  - position: Minor in Applied Statistics
+    date: 2015 - 2021
+
+experience:
+- name: Department of Public Administration &amp; Policy, AU
+  position: >-
+    Graduate Assistant (John D. Marvel, Sheeling Neo) <br/>
+    Research Assistant (Kenneth J. Meier)
+  date: 2024 - present
+- name: Evidence-Based Lab for Public Policy and Management, SNU
+  position: Research Assistant (Byeong Jo Kim)
+  date: 2021 - 2024
+- name: Korea Research Institute for Local Administration
+  position: Research Assistant, Office of Local Administration and Innovation
+  date: 2022
+- name: Korean Augmentation to the United States Army
+  position: Administrative Assistant / Translator (Sergeant)
+  date: 2016 - 2017
+
+awards:
+- name: Summer Academy Fellow, School of Public Affairs, American University
+  date: 2025
+- name: Graduate Assistantship and Tuition Scholarship, American University
+  date: 2024 - 2028
+- name: Best Paper Award, Korea Productivity Association &amp; Institute of Audit and Inspection Research
+  date: 2024
+- name: Brain Korea 21 Scholarship, National Research Foundation of Korea
+  date: 2023 - 2024
+- name: Graduate Student Instructor Scholarship, Seoul National University
+  date: 2021, 2023
+- name: Merit-based Scholarship (High Honor, top 3%), Yonsei University
+  date: 2021
+- name: "Yonsei Certificate for Excellence: Understanding and Using AI"
+  date: 2021

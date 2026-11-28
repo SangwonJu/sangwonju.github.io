@@ -1,0 +1,48 @@
+---
+layout: default
+title : Home
+navbar_title: About
+---
+
+<div class="row">
+    <div class="col-lg-4 col-12">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-8 col-12">
+
+        <div class="mt-3 d-md-none"></div>
+        <section class="home-card bg-white shadow-sm rounded-xl">
+            <div class="home-card__body">
+                <div class="text-profile-bio" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
+                    {{ site.data.profile.short_bio }}
+                </div>
+                {% if site.data.profile.research_interests %}
+                <h3 class="home-card__subtitle">Research Interests</h3>
+                <ul class="home-interests__list">
+                    {% for interest in site.data.profile.research_interests %}
+                    <li>{{ interest }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </section>
+
+        {% include widgets/education_card.html %}
+
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='Publications'
+        %}
+        {% endif %}
+    </div>
+</div>

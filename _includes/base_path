@@ -1,2 +1,0 @@
-{% comment %}Root-relative so assets load over whatever scheme the page uses (https on the custom domain).{% endcomment %}
-{% assign base_path = site.baseurl %}

@@ -1,0 +1,23 @@
+---
+layout: default
+title : CV
+navbar_title: CV
+permalink: /cv/
+---
+
+{% assign cv_pdf = "/files/CV_Sangwon_Ju.pdf" | relative_url %}{% capture cv_ver %}{{ site.time | date: "%s" }}{% endcapture %}
+
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex flex-wrap align-items-center pt-2 mb-3">
+            <h2 class="mb-0 mr-3">Curriculum Vitae</h2>
+            <span class="text-muted small">Last updated December 2026</span>
+            <a class="btn btn-dark btn-sm rounded-pill ml-auto px-3" href="{{ cv_pdf }}" download="CV_Sangwon_Ju.pdf"><span class="icon icon-download" aria-hidden="true"></span> Download PDF</a>
+        </div>
+        <div class="bg-white shadow-sm rounded-xl overflow-hidden cv-frame">
+            <object data="{{ cv_pdf }}?v={{ cv_ver }}#view=FitH&amp;navpanes=0" type="application/pdf" title="Sangwon Ju CV">
+                <p class="p-4 mb-0">Your browser can't show the PDF here. <a href="{{ cv_pdf }}" download="CV_Sangwon_Ju.pdf">Download the CV</a> instead.</p>
+            </object>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1506 @@
+@charset "utf-8";
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 700;
+}
+
+.card {
+    border-radius: 0.8rem!important;
+}
+
+.rounded-xl {
+    border-radius: 0.8rem!important;
+}
+
+.navbar {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+.carousel button {
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+.carousel button:focus {
+    outline: none;
+}
+
+.carousel-indicators button {
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+
+    transition: opacity 0.6s ease;
+}
+
+.carousel-indicators button:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-control-prev:focus-visible .carousel-control-prev-icon,
+.carousel-control-next:focus-visible .carousel-control-next-icon {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel-indicators button {
+        transition: none;
+    }
+}
+
+/* ---- Sangwon Ju additions ---- */
+
+.pub-abstract summary:hover {
+    color: #343a40;
+}
+
+.pub-abstract p {
+    line-height: 1.55;
+}
+
+.list-manuscripts {
+    list-style: none;
+    padding: 0;
+}
+
+.list-manuscripts li {
+    padding: 0.85rem 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.list-manuscripts li:last-child {
+    border-bottom: 0;
+}
+
+.course {
+    padding: 0.85rem 1.5rem;
+}
+
+.cv-frame object {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
+}
+
+.profile-lines {
+    font-size: 0.8rem;
+
+}
+
+/* Active navbar tab: light pill highlight */
+.navbar-light .navbar-nav .nav-link {
+    transition: background-color 0.15s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Make the round portrait edge visible on the white card */
+.profile-portrait {
+    border: 3px solid #fff;
+
+}
+
+/* =====================================================================
+   Palette: "Frost and slate" (dealt by design-taste-frontend)
+   bg #f7f9fa · surface #ecf0f2 · ink #1f3038 · muted #5d6b72 · accent #0d7480
+   Overrides the cream navbar and default Bootstrap blue above.
+   ===================================================================== */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.text-body {
+    color: var(--p-ink) !important;
+}
+
+a:hover {
+    color: var(--p-accent-hover);
+}
+
+.border-gray,
+.border-top,
+.border-bottom,
+.list-manuscripts li {
+    border-color: var(--p-line) !important;
+}
+
+/* Navbar: plain frosted white, slate active pill */
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--p-ink);
+    background-color: var(--p-surface);
+}
+
+/* Research-page section pills */
+
+.btn-dark:hover {
+    background-color: var(--p-accent-hover);
+    border-color: var(--p-accent-hover);
+}
+
+/* =====================================================================
+   Type hierarchy: three clearly different levels
+   1. Page / card titles  — large, heavy, tight tracking
+   2. Section labels      — small caps-style uppercase, wide tracking
+   3. Body                — smaller, airy, regular weight
+   ===================================================================== */
+
+/* 3. Body: About Me paragraphs */
+.text-profile-bio {
+    line-height: 1.75;
+    letter-spacing: 0.005em;
+
+}
+
+/* Education / experience institution names */
+.media-body > div:first-child {
+    letter-spacing: -0.005em;
+}
+
+/* About Me body: between 15px and 16px */
+.text-profile-bio {
+    font-size: 0.97rem;
+}
+
+/* Paper titles link straight to the DOI */
+.pub-title a {
+    transition: background-size 0.2s ease, color 0.2s ease;
+}
+
+.pub-title a:hover {
+    color: var(--p-accent);
+    background-size: 100% 1px;
+}
+
+.pub-title a::after {
+    content: "\2197";
+    font-size: 0.75em;
+    margin-left: 0.3em;
+    color: var(--p-muted);
+}
+
+/* Education card (template-style list) */
+
+.education-card .edu-name {
+    line-height: 1.35;
+}
+
+/* School emblems: show whole, not cropped to a circle */
+.education-card .edu-logo {
+    object-fit: contain;
+
+}
+
+/* School names link out but look like plain text */
+.education-card .edu-link,
+.education-card .edu-link:hover,
+.education-card .edu-link:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =====================================================================
+   Home cards: one shared structure and one heading style
+   (About Me, Research Interests, Education, Selected Publications)
+   Every card: 24px side padding, 24px title, no icon, no divider under
+   the title, 16px between cards.
+   ===================================================================== */
+
+.home-card__body {
+    padding: 0.75rem 1.5rem 1.25rem;
+}
+
+/* Publication rows sit on the same 24px line as the other cards */
+
+.home-card__list > div:first-child {
+    padding-top: 0.75rem !important;
+}
+
+.home-card__foot {
+    padding: 0.75rem 1.5rem 1rem;
+
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Education list inside the shared body */
+.education-card .home-card__body ul {
+    margin-bottom: 0 !important;
+}
+
+/* A paper with a cover: text left, picture right; stacks on phones */
+.pub-with-cover {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.pub-with-cover__body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.pub-cover {
+    flex: 0 0 240px;
+
+    border: 1px solid var(--p-line);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+.pub-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.25s ease;
+}
+
+.pub-cover:hover img {
+    transform: scale(1.03);
+}
+
+@media (max-width: 767.98px) {
+    .pub-cover {
+        flex-basis: auto;
+        width: 100%;
+    }
+}
+
+/* When the abstract is open, hide the cover so the text uses the full width */
+.pub-with-cover:has(details[open]) .pub-cover {
+    display: none;
+}
+
+/* Cover follows the text height (summary + Abstract) instead of setting it */
+@media (min-width: 768px) {
+    .pub-with-cover {
+        align-items: stretch;
+    }
+    .pub-cover {
+        position: relative;
+        min-height: 80px;
+    }
+    .pub-cover img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left top;
+    }
+}
+
+/* Cover on the left of the summary */
+.pub-cover {
+    order: -1;
+}
+
+@media (max-width: 767.98px) {
+    .pub-with-cover {
+        flex-direction: column;
+    }
+}
+
+/* One link look: teal text, underline drawn on hover */
+main a:not(.btn):not(.edu-link):not(.nav-link) {
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.2s ease, color 0.2s ease;
+}
+
+main a:not(.btn):not(.edu-link):not(.nav-link):hover {
+    background-size: 100% 1px;
+}
+
+/* Paper titles keep ink colour (they are item names), teal on hover */
+.pub-title a::after {
+    content: none;
+}
+
+/* =====================================================================
+   Icons: official SVGs (Font Awesome 6.5.1, Academicons 1.9.1) drawn as
+   masks, so they take the text colour and cost ~1 KB each instead of
+   three icon fonts.
+   ===================================================================== */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    -webkit-mask: var(--icon) center / contain no-repeat;
+            mask: var(--icon) center / contain no-repeat;
+}
+
+.icon-download   { --icon: url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/svgs/solid/download.svg"); }
+.icon-pen-ruler  { --icon: url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/svgs/solid/pen-ruler.svg"); }
+
+/* Profile icon row: 44px tap targets, 6px apart */
+
+.profile-icons .icon-link {
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+.profile-icons .icon-link:hover {
+    background-color: var(--p-accent-soft);
+    color: var(--p-accent-hover);
+    transform: translateY(-1px);
+}
+
+/* Email in the body face, not monospace */
+.email-text {
+    font-family: inherit;
+    font-size: 0.85rem;
+}
+
+/* Menu button: three bars instead of a map icon */
+.menu-bars,
+.menu-bars::before,
+.menu-bars::after {
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+    position: relative;
+    vertical-align: middle;
+}
+.menu-bars::before,
+.menu-bars::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+.menu-bars::before { top: -5px; }
+.menu-bars::after  { top: 5px; }
+.navbar-toggler {
+    min-height: 44px;
+    border-color: var(--p-line) !important;
+    color: var(--p-ink) !important;
+}
+
+/* Skip link: hidden until focused, then above the navbar */
+.skip-link {
+    position: fixed;
+    left: 12px;
+    top: -60px;
+    z-index: 2000;
+    padding: 0.6rem 1rem;
+    background: var(--p-ink);
+    color: #fff !important;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: top 0.15s ease;
+}
+.skip-link:focus {
+    top: 12px;
+    outline: 3px solid var(--p-accent-soft);
+}
+main:focus { outline: none; }
+
+/* Visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 2px solid var(--p-accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Phone footer: stacked, left-aligned, roomy */
+@media (max-width: 575.98px) {
+    .footer .row > .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .footer .text-right {
+        text-align: left !important;
+        margin-top: 0.4rem;
+    }
+
+}
+
+/* =====================================================================
+   Tablet and phone (< 992px): profile card spans the top, content gets
+   the full width below it.
+   ===================================================================== */
+@media (max-width: 991.98px) {
+    .profile-sticky {
+        position: static;
+    }
+    .profile-card {
+        margin-bottom: 1rem;
+    }
+
+}
+
+/* 576–991px: horizontal profile card, photo left, details right */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .profile-card .card-body {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        column-gap: 28px;
+        align-items: center;
+        padding: 1.25rem 1.5rem !important;
+    }
+    .profile-card .card-body > .row:first-child {
+        grid-row: 1 / span 4;
+        margin: 0;
+    }
+    .profile-card .card-body > .row:not(:first-child) {
+        grid-column: 2;
+        margin: 0;
+    }
+    .profile-card .card-body > .row > .col {
+        text-align: left !important;
+        padding: 0;
+    }
+    .profile-card .figure,
+    .profile-card .figure-img {
+        margin: 0;
+    }
+
+    .profile-card .mb-3.d-md-none {
+        margin-bottom: 0 !important;
+    }
+
+}
+
+/* Sub-labels: beat Bootstrap's .p-3 so every label starts on the 24px line */
+main .rounded-xl > h6,
+main .rounded-xl > h6.p-3 {
+    padding: 1rem 1.5rem 0.25rem !important;
+    border-bottom: 0 !important;
+}
+main .rounded-xl > h6 + .list-manuscripts > li:first-child {
+    border-top: 0;
+    padding-top: 0.5rem;
+}
+main .rounded-xl > h6 + .course {
+    padding-top: 0.5rem;
+}
+
+/* =====================================================================
+   Profile links, as on the old site: line icons + labels in a 2 x 2 grid
+   (AU Profile, Google Scholar / ORCID, LinkedIn)
+   ===================================================================== */
+.profile-links {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 0.15rem 1.4rem;
+    list-style: none;
+    margin: 0.35rem 0 0;
+    padding: 0;
+}
+
+.profile-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+
+    font-size: 0.92rem;
+    white-space: nowrap;
+
+    transition: color 0.15s ease;
+}
+
+.profile-links a:hover {
+    color: var(--p-accent) !important;
+}
+
+.line-icon {
+    display: inline-flex;
+
+    height: 1.08em;
+    margin-right: 0.45em;
+
+}
+
+.line-icon svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.85;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Tablet horizontal card: grid starts on the text's left edge */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .profile-links {
+        justify-content: start;
+    }
+}
+
+/* Phones: 44px tall targets */
+@media (max-width: 575.98px) {
+    .profile-links a {
+        min-height: 44px;
+    }
+}
+
+/* Profile card: no box, sits on the page ground */
+.profile-card,
+.profile-card.card {
+    background: transparent !important;
+
+}
+
+/* About Me: links in the body colour (still clickable, teal on hover) */
+
+.text-profile-bio a:hover {
+    color: var(--p-accent) !important;
+}
+
+/* Portrait is always a true circle: fixed square, cropped to fit */
+.profile-portrait {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center top;
+}
+.profile-portrait--phone {
+    width: 160px;
+    max-width: 50%;
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .profile-portrait--phone {
+        width: 150px;
+        max-width: 100%;
+    }
+}
+
+/* Shadows tinted to the navy, not the old slate */
+
+.profile-portrait {
+    box-shadow: 0 0 0 1px var(--p-line), 0 4px 12px rgba(24, 36, 73, 0.08);
+}
+
+/* Download button in AU Blue, red on hover */
+
+.btn-dark:hover,
+.btn-dark:focus {
+    background-color: var(--p-accent-hover);
+    border-color: var(--p-accent-hover);
+}
+
+/* Profile links: icons in AU Blue, label navy; red on hover */
+
+.profile-links a:hover,
+.profile-links a:hover .line-icon {
+    color: var(--p-accent-hover) !important;
+}
+
+/* =====================================================================
+   FINAL LOOK  (design-taste-frontend: `start.mjs brand`, AU colours,
+   pairing "literata": Literata headings / Figtree text)
+   Two colours only: AU navy #182449 (ink, nav band) + AU Blue #004FA2
+   (links, icons, active marks). No red. Hover = deeper blue.
+   ===================================================================== */
+:root {
+    --p-line: #e1e6ee;
+
+    --p-accent: #004fa2;
+    --p-accent-hover: #00376f;
+    --p-accent-soft: #e7eef8;
+
+}
+
+/* Type: one sans for reading, the serif for headings only */
+
+main h1,
+main h2,
+.home-card__title,
+.profile-name,
+.edu-heading,
+main h6,
+.navbar-brand {
+    letter-spacing: -0.01em;
+}
+
+/* ---- Nav band: AU navy, white text, a thin white bar under the active tab */
+.site-nav,
+.navbar.site-nav {
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+}
+
+.site-nav .navbar-nav .nav-link {
+    transition: color 0.15s ease, box-shadow 0.15s ease;
+}
+.site-nav .navbar-nav .nav-link:hover {
+    color: var(--p-inv-ink) !important;
+}
+
+.site-nav .navbar-toggler {
+    color: var(--p-inv-ink) !important;
+    border-color: rgba(246, 248, 251, 0.35) !important;
+}
+
+/* ---- Blue only: every hover goes to a deeper blue, never red */
+a:hover,
+.pub-title a:hover,
+.text-profile-bio a:hover,
+.profile-links a:hover,
+.profile-links a:hover .line-icon {
+    color: var(--p-accent-hover) !important;
+}
+.btn-dark,
+.btn-dark:focus {
+    background-color: var(--p-accent);
+    border-color: var(--p-accent);
+}
+.btn-dark:hover {
+    background-color: var(--p-accent-hover);
+    border-color: var(--p-accent-hover);
+}
+
+/* Research page side list: blue text, no pill */
+.nav-pills .nav-link {
+    color: var(--p-muted);
+    border-radius: 0;
+    border-left: 2px solid var(--p-line);
+    padding: 0.35rem 0.9rem;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: var(--p-accent);
+    background: transparent;
+    border-left-color: var(--p-accent);
+    font-weight: 600;
+}
+
+/* =====================================================================
+   Research page: numbered author–year citations (old site's format)
+   ===================================================================== */
+.cite-card h6.pub-group-label {
+    margin: 0;
+}
+.cite-list {
+    margin: 0;
+    padding: 0.4rem 1.5rem 1.1rem 3rem;
+}
+.cite {
+    padding: 0.55rem 0;
+
+}
+.cite::marker {
+    color: var(--p-muted);
+    font-weight: 600;
+}
+.cite + .cite {
+    border-top: 1px solid var(--p-line);
+    padding-top: 0.85rem;
+}
+.cite__line {
+    margin: 0 0 0.25rem;
+
+    line-height: 1.6;
+
+}
+.cite__doi {
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+.cite .pub-with-cover {
+    margin-top: 0.4rem;
+}
+
+/* One dark band only (the nav). Footer back to the light surface. */
+
+.footer a:hover {
+    color: var(--p-accent-hover) !important;
+}
+
+/* Phones: a slimmer nav band */
+@media (max-width: 575.98px) {
+    .site-nav .navbar-toggler {
+        min-height: 40px;
+        padding: 0.3rem 0.6rem !important;
+        font-size: 0.92rem !important;
+    }
+
+}
+
+/* About Me links back to AU Blue, like every other link */
+
+.text-profile-bio a:hover {
+    color: var(--p-accent-hover) !important;
+}
+
+/* Every text link: navy, underlined lightly; AU Blue on hover */
+main a:not(.btn):not(.edu-link):not(.nav-link),
+.text-profile-bio a,
+.footer a,
+.email-text,
+.cite__doi,
+.home-card__foot a {
+    color: var(--p-link) !important;
+    text-decoration: underline;
+    text-decoration-color: rgba(24, 36, 73, 0.35);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+main a:not(.btn):not(.edu-link):not(.nav-link):hover,
+.text-profile-bio a:hover,
+.footer a:hover,
+.email-text:hover,
+.cite__doi:hover,
+.home-card__foot a:hover {
+    color: var(--p-accent) !important;
+    text-decoration-color: var(--p-accent);
+}
+
+/* Paper titles, school names and the 2 x 2 profile links are item names:
+   navy with no underline, blue on hover */
+
+.pub-title a:hover,
+.profile-links a:hover,
+.profile-links a:hover .line-icon {
+    color: var(--p-accent) !important;
+}
+
+/* =====================================================================
+   Back to a white nav bar; every text link in AU Blue
+   ===================================================================== */
+
+.site-nav,
+.navbar.site-nav {
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+}
+
+.site-nav .navbar-nav .nav-link:hover {
+    color: var(--p-ink) !important;
+}
+
+.site-nav .navbar-toggler {
+    color: var(--p-ink) !important;
+    border-color: var(--p-line) !important;
+}
+
+/* Links: AU Blue, light blue underline; deeper blue on hover */
+
+main a:not(.btn):not(.edu-link):not(.nav-link):hover,
+.text-profile-bio a:hover,
+.footer a:hover,
+.email-text:hover,
+.cite__doi:hover,
+.home-card__foot a:hover {
+    color: var(--p-accent-hover) !important;
+    text-decoration-color: var(--p-accent-hover);
+}
+
+/* Item names (school names, paper titles) stay navy, as before */
+
+.pub-title a:hover {
+    color: var(--p-accent) !important;
+}
+
+/* Profile 2 x 2 links: black (navy ink) label and icon, AU Blue on hover */
+
+.profile-links a:hover,
+.profile-links a:hover .line-icon {
+    color: var(--p-accent) !important;
+}
+
+main ul.profile-links li a:not(.btn):not(.nav-link) {
+    color: var(--p-ink) !important;
+
+}
+main ul.profile-links li a:not(.btn):not(.nav-link):hover,
+main ul.profile-links li a:not(.btn):not(.nav-link):hover .line-icon {
+    color: var(--p-accent) !important;
+}
+
+/* Nav bar height back to the template's (Bootstrap default, ~57px) at every width */
+
+.site-nav .navbar-toggler {
+    min-height: 44px;
+    padding: 0.25rem 0.75rem !important;
+    font-size: 1rem !important;
+}
+
+.sticky-top {
+    top: 80px !important;
+}
+
+/* =====================================================================
+   Where colour is used, use AU Blue clearly
+   ===================================================================== */
+
+/* Text links: AU Blue, medium weight, full-strength underline on hover */
+main a:not(.btn):not(.edu-link):not(.nav-link),
+.text-profile-bio a,
+.footer a,
+.email-text,
+.cite__doi,
+.home-card__foot a {
+    font-weight: 500;
+    text-decoration-color: rgba(0, 79, 162, 0.45);
+}
+main a:not(.btn):not(.edu-link):not(.nav-link):hover,
+.text-profile-bio a:hover,
+.footer a:hover,
+.email-text:hover,
+.cite__doi:hover,
+.home-card__foot a:hover {
+    text-decoration-color: currentColor;
+}
+
+/* "Abstract" toggles in AU Blue */
+.pub-abstract summary,
+.pub-abstract summary.text-muted {
+    font-weight: 500;
+}
+
+/* Research page: citation numbers and side list in AU Blue */
+.cite::marker {
+    color: var(--p-accent);
+    font-weight: 700;
+}
+
+/* =====================================================================
+   4001 look (sangwonju.github.io)
+   Every page: white background and the 4001 top bar.
+   Home only (.page-home): Public Sans headings, black ink, #1a4f8b links.
+   ===================================================================== */
+:root {
+    --s-accent: #1a4f8b;
+    --s-accent-hover: #0d3566;
+    --s-accent-soft: #e8eef6;
+    --s-bar: #f2f3f3;
+    --s-bar-line: #bdc1c4;
+
+    --s-sans: "Public Sans", "Helvetica Neue", Helvetica, Arial, "Malgun Gothic", "Noto Sans KR", sans-serif;
+}
+
+/* ---- every page: white background ---- */
+html,
+html body,
+html body.bg-light,
+html body .footer {
+    background-color: #ffffff !important;
+}
+
+/* ---- every page: 4001 top bar ---- */
+html body nav.navbar.site-nav {
+    -webkit-backdrop-filter: none !important;
+            backdrop-filter: none !important;
+
+}
+
+html body nav.site-nav .navbar-nav .nav-link:hover,
+html body nav.site-nav .navbar-nav .nav-link:focus {
+    color: var(--s-accent) !important;
+    text-decoration: none !important;
+}
+
+html body nav.site-nav .navbar-toggler {
+    color: var(--s-ink) !important;
+}
+
+/* ---- Home only ---- */
+html body.page-home .home-card,
+html body.page-home .profile-card,
+html body.page-home .card {
+    box-shadow: none !important;
+}
+
+html body.page-home main .profile-name {
+    letter-spacing: -0.015em !important;
+}
+
+html body.page-home main a:hover,
+html body.page-home main .text-profile-bio a:hover,
+html body.page-home main a.email-text:hover {
+    color: var(--s-accent-hover) !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 0.18em !important;
+}
+
+html body.page-home main ul.profile-links li a:hover,
+html body.page-home main ul.profile-links li a:hover .line-icon {
+    color: var(--s-accent) !important;
+}
+
+html body.page-home main .home-card .border-bottom,
+html body.page-home main .home-card__foot {
+    border: 0 !important;
+}
+
+/* Research Interests as in 4001: plain bulleted list, two columns filled row by row */
+html body.page-home main .home-interests__list {
+    display: grid;
+
+    row-gap: 0.3rem;
+    margin: 0;
+    padding-left: 1.15em;
+
+}
+html body.page-home main .home-interests__list li {
+    padding-left: 0.2em;
+
+    font-size: 0.95em;
+
+}
+html body.page-home main .home-interests__list li::marker {
+    color: var(--s-ink);
+    font-size: 0.85em;
+}
+
+/* Home widths matched to 4001: 1180px frame, 330px profile column,
+   54px gap, 760px text column (no card padding now that boxes are gone) */
+@media (min-width: 992px) {
+    html body.page-home main.container-lg > .row {
+        flex-wrap: nowrap;
+
+    }
+    html body.page-home main.container-lg > .row > .col-lg-4 {
+        flex: 0 0 330px;
+        max-width: 330px;
+
+    }
+    html body.page-home main.container-lg > .row > .col-lg-8 {
+        flex: 1 1 auto;
+        max-width: none;
+        min-width: 0;
+
+    }
+
+}
+
+/* Real black for text that is meant to be black (was navy/slate #182449, #2f3a55) */
+:root {
+    --p-ink: #000000;
+
+}
+html body {
+    color: #000000;
+}
+
+/* Research and Teaching: no boxes. Cards lose their border, shadow and
+   side padding so text sits flush under each heading; thin dividers between
+   entries stay. */
+html body.page-research main .rounded-xl,
+html body.page-teaching main .rounded-xl {
+    border: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    overflow: visible !important;
+}
+html body.page-research main .rounded-xl,
+html body.page-teaching main .rounded-xl,
+html body.page-research main .rounded-xl .px-4,
+html body.page-teaching main .rounded-xl .px-4,
+html body.page-research main .rounded-xl .p-3,
+html body.page-teaching main .rounded-xl .p-3,
+html body.page-research main .rounded-xl .p-4,
+html body.page-teaching main .rounded-xl .p-4,
+html body.page-research main .rounded-xl .course,
+html body.page-teaching main .rounded-xl .course,
+html body.page-research main .rounded-xl li,
+html body.page-teaching main .rounded-xl li.course {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+html body.page-research main .rounded-xl h6,
+html body.page-teaching main .rounded-xl h6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+html body.page-research main .rounded-xl ol {
+    padding-left: 1.5em !important;
+}
+
+/* CV: the PDF frame loses its box too */
+html body.page-cv main .rounded-xl {
+    border: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+/* Research: the dissertation summary keeps a light bordered box */
+html body.page-research main .rounded-xl.text-profile-bio {
+    border: 1px solid #dee2e6 !important;
+    border-radius: 0.8rem !important;
+    padding: 1.4rem 1.6rem !important;
+}
+
+/* As in 4001: every non-link text is black, including dates, notes,
+   abstracts and the pronoun line (were grays #5b6478, #495057, #555) */
+
+html body main .text-muted,
+html body main .profile-lines,
+html body main .profile-lines.text-muted,
+html body main em,
+html body main small,
+html body main .small,
+html body main p,
+html body main li,
+html body main .pub-abstract p,
+html body .footer .text-muted {
+    color: #000000 !important;
+}
+
+/* =====================================================================
+   One system for all four pages, taken from Home:
+   1180px frame with 18px sides, Public Sans headings, black text,
+   one link look (#1a4f8b, underline on hover), 17px reading text.
+   ===================================================================== */
+@media (min-width: 992px) {
+    html body .container-lg {
+        max-width: 1180px;
+
+    }
+
+}
+
+/* headings */
+
+html body main h3,
+html body main h4,
+html body main h5,
+html body main h6 {
+    letter-spacing: -0.015em !important;
+}
+
+/* one link look */
+html body main a:not(.btn):not(.nav-link),
+html body main .text-profile-bio a,
+html body main a.email-text {
+    color: var(--s-accent) !important;
+    text-decoration: none !important;
+}
+html body main a:not(.btn):not(.nav-link):hover,
+html body main .text-profile-bio a:hover,
+html body main a.email-text:hover {
+    color: var(--s-accent-hover) !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 0.18em !important;
+}
+/* links that read as names or icons stay black, as on Home */
+
+html body main ul.profile-links li a:hover,
+html body main ul.profile-links li a:hover .line-icon {
+    color: var(--s-accent) !important;
+}
+html body main summary {
+    color: var(--s-accent) !important;
+}
+
+/* reading text: 17px like Home's About */
+html body main .text-profile-bio p {
+    font-size: 1.0625rem !important;
+    line-height: 1.7 !important;
+}
+
+/* one link colour everywhere: the older rules read these variables */
+:root {
+    --p-link: #1a4f8b;
+    --p-accent: #1a4f8b;
+    --p-accent-hover: #0d3566;
+}
+
+/* One typeface, as on 4001: Public Sans for all text, not only headings */
+html body,
+html body main,
+html body main *:not(.line-icon):not(svg):not(path),
+html body .footer,
+html body .footer * {
+    font-family: var(--s-sans) !important;
+}
+
+/* =====================================================================
+   Top bar copied from 4001 (measured at 1440px): 70px tall, light gray
+   with a hairline, name 24.84px bold, menu on the left right after the
+   name, 17.64px items 36px apart, active item blue semibold.
+   ===================================================================== */
+html body nav.navbar.site-nav {
+    padding: 0 !important;
+    background-color: #f2f3f3 !important;
+    border-bottom: 1px solid #bdc1c4 !important;
+
+    -webkit-backdrop-filter: none !important;
+            backdrop-filter: none !important;
+}
+html body nav.navbar.site-nav > .container-lg {
+    max-width: 1180px;
+    height: 100%;
+
+    justify-content: flex-start;
+
+}
+html body nav.site-nav .navbar-brand,
+html body nav.site-nav .navbar-brand strong {
+    font-size: 24.84px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.015em !important;
+
+    color: #000000 !important;
+}
+html body nav.site-nav .navbar-brand {
+    margin-right: 18px !important;
+}
+@media (min-width: 576px) {
+    html body nav.site-nav .navbar-collapse {
+        flex-grow: 0;
+    }
+    html body nav.site-nav .navbar-nav {
+        margin-left: 35.5px !important;
+        align-items: center;
+    }
+    html body nav.site-nav .navbar-nav .nav-link {
+        padding: 9px 0 !important;
+        margin: 0 18px !important;
+    }
+    html body nav.site-nav .navbar-nav .nav-item:last-child .nav-link {
+        margin-right: 0 !important;
+    }
+}
+html body nav.site-nav .navbar-nav .nav-link {
+    font-size: 17.64px !important;
+
+    color: #000000 !important;
+
+    transition: color 0.15s;
+}
+html body nav.site-nav .navbar-nav .nav-link:hover,
+html body nav.site-nav .navbar-nav .nav-link:focus {
+    color: #1a4f8b !important;
+}
+html body nav.site-nav .navbar-nav .active > .nav-link {
+    color: #1a4f8b !important;
+    font-weight: 600 !important;
+
+}
+
+/* Breathing room as on 4001: content starts 36px under the bar,
+   the photo's top lines up with the first heading, paragraphs 14px apart,
+   sections well apart */
+html body main.container-lg {
+    padding-top: 26px;
+}
+html body.page-home main .profile-card .card-body {
+    padding-top: 0 !important;
+}
+html body main .text-profile-bio p {
+    margin-bottom: 14.4px !important;
+}
+html body main .text-profile-bio p:last-child {
+    margin-bottom: 0 !important;
+}
+
+html body.page-home main .home-card {
+    margin-bottom: 46px !important;
+}
+html body.page-home main .home-card__body {
+    padding-top: 0 !important;
+}
+
+/* Research Interests spans the same width as the About text: two equal halves */
+html body.page-home main .home-interests__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 2rem !important;
+
+}
+@media (max-width: 767.98px) {
+    html body.page-home main .home-interests__list {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+}
+
+/* Heading scale copied from 4001 (measured at 1440px) */
+html body main h2,
+html body main .home-card__title {
+    font-size: 24.3px !important;
+    font-weight: 760 !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.022em !important;
+}
+html body.page-home main .home-card__title {
+    margin-bottom: 10.8px !important;
+}
+html body.page-home main .home-card__subtitle {
+    font-size: 20.16px !important;
+    font-weight: 760 !important;
+    line-height: 1.25 !important;
+    margin: 1.6rem 0 10px !important;
+}
+html body main h3:not(.home-card__subtitle),
+html body main h4,
+html body main h5,
+html body main h6 {
+    font-size: 18.9px !important;
+    font-weight: 650 !important;
+    line-height: 1.3 !important;
+}
+
+/* Education: more air between lines and between schools */
+html body.page-home main .education-card .home-card__body {
+    padding-top: 4px !important;
+}
+html body.page-home main .education-card li.media {
+    margin-bottom: 18px !important;
+}
+html body.page-home main .education-card li.media:last-child {
+    margin-bottom: 0 !important;
+}
+html body.page-home main .education-card .edu-logo {
+    margin-top: 3px;
+    margin-right: 12px !important;
+}
+html body.page-home main .education-card .edu-name {
+    margin-bottom: 4px;
+    font-size: 17px;
+    font-weight: 700;
+}
+html body.page-home main .education-card .edu-detail {
+    font-size: 15.5px;
+    line-height: 1.6;
+}
+html body.page-home main h1.profile-name,
+html body.page-home main .profile-card h1.profile-name {
+    font-size: 23.4px !important;
+    font-weight: 600 !important;
+}
+/* publication titles are citations, not section headings: body size */
+html body main h5 {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    line-height: 1.45 !important;
+}
+
+/* Slimmer top bar: 56px instead of 70px, name and menu centred in it */
+
+html body nav.site-nav .navbar-brand,
+html body nav.site-nav .navbar-nav .nav-link {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* =====================================================================
+   Quality pass: tablet and phone widths, touch targets, keyboard focus
+   ===================================================================== */
+
+/* one 18px side margin at every width, so content lines up under the name */
+html body .container-lg {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
+html body main.container-lg > .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+html body main.container-lg > .row > [class*="col"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+@media (min-width: 992px) {
+    html body.page-home main.container-lg > .row > .col-lg-8 {
+        padding-left: 54px !important;
+    }
+}
+
+/* Home sections have no box at any width, so no inner side padding */
+html body.page-home main .home-card__head,
+html body.page-home main .home-card__body,
+html body.page-home main .home-card__list > div,
+html body.page-home main .home-card__foot {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* phone: the Menu button sits at the right edge of the bar */
+@media (max-width: 575.98px) {
+    html body nav.site-nav .navbar-toggler {
+        margin-left: auto;
+        min-height: 44px;
+    }
+    html body nav.site-nav .navbar-collapse {
+        background: #f2f3f3;
+        margin: 0 -18px;
+        padding: 4px 18px 12px;
+        border-bottom: 1px solid #bdc1c4;
+    }
+    html body nav.site-nav .navbar-nav .nav-link {
+        padding: 10px 0 !important;
+        margin: 0 !important;
+    }
+}
+
+/* touch screens: small links get a 44px tall hit area without moving text */
+@media (pointer: coarse) {
+    html body main .edu-link,
+    html body main a.email-text,
+    html body main summary,
+    html body main li a,
+    html body main .small a,
+    html body .footer a,
+    html body main .home-card__foot a {
+        position: relative;
+    }
+    html body main .edu-link::after,
+    html body main a.email-text::after,
+    html body main summary::after,
+    html body main li a::after,
+    html body main .small a::after,
+    html body .footer a::after,
+    html body main .home-card__foot a::after {
+        content: "";
+        position: absolute;
+        left: -4px;
+        right: -4px;
+        top: 50%;
+        height: 44px;
+        transform: translateY(-50%);
+    }
+}
+
+/* keyboard focus: a clear ring in the link blue */
+html body a:focus-visible,
+html body summary:focus-visible,
+html body button:focus-visible {
+    outline: 2px solid #1a4f8b !important;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+@media (max-width: 575.98px) {
+    html body nav.site-nav .navbar-nav {
+        margin-left: 0 !important;
+    }
+}
+
+/* top bar: 65px */
+html body nav.navbar.site-nav {
+    height: 65px !important;
+    min-height: 65px !important;
+}
+html body {
+    padding-top: 65px !important;
+}
+@media (max-width: 575.98px) {
+    /* the open phone menu grows below the bar */
+    html body nav.navbar.site-nav {
+        height: auto !important;
+    }
+    html body nav.navbar.site-nav > .container-lg {
+        min-height: 65px;
+    }
+}
+
+/* as on 4001: the name and menu sit low in the bar (about 11px above its
+   bottom line) rather than centred */
+@media (min-width: 576px) {
+    html body nav.navbar.site-nav > .container-lg {
+        padding-top: 18px !important;
+
+    }
+}
+
+/* =====================================================================
+   Fluid type: sizes grow with the screen. Phone (390px) -> laptop
+   (1440px, the sizes tuned by hand) -> large monitor (1920px), then stop.
+   ===================================================================== */
+:root {
+    --fs-text: clamp(16px, 15.629px + 0.0952vw, 17px);
+    --fs-h2: clamp(21px, 19.774px + 0.3143vw, 24.3px);
+    --fs-h3: clamp(18px, 17.198px + 0.2057vw, 20.16px);
+    --fs-h6: clamp(17px, 16.294px + 0.1810vw, 18.9px);
+    --fs-name: clamp(21px, 20.109px + 0.2286vw, 23.4px);
+    --fs-list: clamp(15px, 14.926px + 0.0190vw, 15.2px);
+    --fs-edu: clamp(16px, 15.629px + 0.0952vw, 17px);
+    --fs-edu-detail: clamp(14.5px, 14.129px + 0.0952vw, 15.5px);
+    --fs-main: clamp(15.5px, 15.314px + 0.0476vw, 16px);
+    --fs-brand: clamp(22px, 20.945px + 0.2705vw, 24.84px);
+    --fs-nav: clamp(16.5px, 16.077px + 0.1086vw, 17.64px);
+}
+@media (min-width: 1440px) {
+    :root {
+        --fs-text: clamp(17px, 12.500px + 0.3125vw, 18.5px);
+        --fs-h2: clamp(24.3px, 17.700px + 0.4583vw, 26.5px);
+        --fs-h3: clamp(20.16px, 14.640px + 0.3833vw, 22px);
+        --fs-h6: clamp(18.9px, 14.100px + 0.3333vw, 20.5px);
+        --fs-name: clamp(23.4px, 17.100px + 0.4375vw, 25.5px);
+        --fs-list: clamp(15.2px, 11.300px + 0.2708vw, 16.5px);
+        --fs-edu: clamp(17px, 12.500px + 0.3125vw, 18.5px);
+        --fs-edu-detail: clamp(15.5px, 11.750px + 0.2604vw, 16.75px);
+        --fs-main: clamp(16px, 12.250px + 0.2604vw, 17.25px);
+        --fs-brand: clamp(24.84px, 21.360px + 0.2417vw, 26px);
+        --fs-nav: clamp(17.64px, 15.060px + 0.1792vw, 18.5px);
+    }
+}
+
+html body main {
+    font-size: var(--fs-main);
+}
+html body main .text-profile-bio p,
+html body main h5 {
+    font-size: var(--fs-text) !important;
+}
+html body main h2,
+html body main .home-card__title {
+    font-size: var(--fs-h2) !important;
+}
+html body.page-home main .home-card__subtitle {
+    font-size: var(--fs-h3) !important;
+}
+html body main h3:not(.home-card__subtitle),
+html body main h4,
+html body main h6 {
+    font-size: var(--fs-h6) !important;
+}
+html body main .profile-name,
+html body.page-home main h1.profile-name,
+html body.page-home main .profile-card h1.profile-name {
+    font-size: var(--fs-name) !important;
+}
+html body.page-home main .home-interests__list li {
+    font-size: var(--fs-list);
+}
+html body.page-home main .education-card .edu-name {
+    font-size: var(--fs-edu);
+}
+html body.page-home main .education-card .edu-detail {
+    font-size: var(--fs-edu-detail);
+}
+html body nav.site-nav .navbar-brand,
+html body nav.site-nav .navbar-brand strong {
+    font-size: var(--fs-brand) !important;
+}
+html body nav.site-nav .navbar-nav .nav-link {
+    font-size: var(--fs-nav) !important;
+}
+
+/* Research Interests: the right column is as wide as its longest item, so
+   larger type on big screens never wraps an item; the list still spans the
+   full text width */
+@media (min-width: 768px) {
+    html body.page-home main .home-interests__list {
+        grid-template-columns: minmax(0, 1fr) max-content !important;
+    }
+    html body.page-home main .home-interests__list li {
+        white-space: nowrap;
+    }
+}

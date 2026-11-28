@@ -1,0 +1,75 @@
+---
+layout: default
+title : Research
+navbar_title: Research
+permalink: /research/
+body_attr: >-
+  data-spy="scroll" data-target="#navbar-sections" data-offset="100"
+---
+
+{% assign pubs = site.publications | sort: "date" | reverse %}
+
+<div class="row">
+    <div class="col-12 col-lg-10">
+
+        <div class="bg-white shadow-sm rounded-xl p-4 text-profile-bio">
+            <p>My dissertation examines how generative AI is reshaping street-level accountability. Taking a behavioral approach, I use experimental and computational methods to study how citizens and public employees form judgments when algorithms mediate their encounters. Accountability at the street level rests on these judgments. If bureaucrats come to attribute decisions to the system rather than to themselves, whether willingly or not, their moral agency erodes, and the democratic accountability that depends on them weakens as well.</p>
+            <p>Beyond the dissertation, I examine a second intermediary in these encounters, organizational structure. From an institutional perspective, I study how structure conditions citizen–state interactions and how those interactions, in turn, shape policy outcomes.</p>
+            <p class="mb-0 small text-muted">A full list of my work is also available on <a href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}" target="_blank">Google Scholar</a>.</p>
+        </div>
+
+        <h2 class="pt-4" id="published">Peer-Reviewed Publications</h2>
+        {% assign pubs_en = pubs | where: "lang", "en" %}
+        {% assign pubs_ko = pubs | where: "lang", "ko" %}
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl overflow-hidden cite-card">
+            <h6 class="pub-group-label">In English</h6>
+            <ol class="cite-list">
+            {% for item in pubs_en %}
+                {% include widgets/publication_citation.html item=item %}
+            {% endfor %}
+            </ol>
+            <h6 class="pub-group-label border-top border-gray">In Korean</h6>
+            <ol class="cite-list">
+            {% for item in pubs_ko %}
+                {% include widgets/publication_citation.html item=item %}
+            {% endfor %}
+            </ol>
+        </div>
+
+        <h2 class="pt-4" id="under-review">Manuscripts Under Review</h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            <h6 class="p-3 mb-0 border-bottom border-gray">Revise and Resubmit</h6>
+            <ul class="list-manuscripts mb-0">
+                <li>Meier, Kenneth J., Grant Mobley, and <strong>Sangwon Ju</strong>. "Maximizing Efficiency with a Within-Subjects Forced-Choice Design." <i>Public Administration Review</i>. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6182359" target="_blank">Preprint (SSRN)</a></li>
+            </ul>
+            <h6 class="p-3 mb-0 border-top border-bottom border-gray">Under Review</h6>
+            <ul class="list-manuscripts mb-0">
+                <li><strong>Ju, Sangwon</strong>, and Kenneth J. Meier. "The Interaction of Active and Symbolic Representation: Long-Run Evidence from Korean High Schools." <span class="text-muted">Presenting at MPSA 2027.</span></li>
+                <li><strong>Ju, Sangwon</strong>, and Kenneth J. Meier. "Citizens' Evaluation of Structural Tradeoffs in the U.S. and Korea: Stability, Flexibility, and Red Tape." <span class="text-muted">Presented at MPSA 2026.</span></li>
+                <li><strong>Ju, Sangwon</strong>, and John D. Marvel. "Size Is Interesting: Span of Control and Frontline Performance Management." <span class="text-muted">Presented at PMRC 2025 and the DC Public Management Consortium 2025.</span></li>
+                <li>Neo, Sheeling, and <strong>Sangwon Ju</strong>. "What Is Public Employee Identity? A Cross-National Examination." <span class="text-muted">Presented at PMRC 2025 and EGPA 2025.</span></li>
+                <li>Marvel, John D., and <strong>Sangwon Ju</strong>. "Inoculating Citizens against Anti-Government Sycophancy in Large Language Models." <span class="text-muted">Presented at PMRC 2026 and APSA 2026.</span> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6630758" target="_blank">Preprint (SSRN)</a></li>
+            </ul>
+        </div>
+
+        <h2 class="pt-4" id="in-progress">Work in Progress</h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            <ul class="list-manuscripts mb-0">
+                <li><strong>Ju, Sangwon</strong>. "Fire Alarm for Transparency? Congressional Oversight and Federal FOIA Administration." <span class="text-muted">Manuscript available; presenting at ASPA 2027.</span></li>
+                <li><strong>Ju, Sangwon</strong>, and Sheeling Neo. "Frictionless Discretion? Generative AI and Accountability in Street-Level Bureaucracy." <span class="text-muted">Presenting at PMRC 2027.</span></li>
+                <li>Meier, Kenneth J., and <strong>Sangwon Ju</strong>. "Comparative Analysis on Organizational Autonomy."</li>
+                <li>Marvel, John D., Eli Lee, and <strong>Sangwon Ju</strong>. "Ideological Asymmetries in Selection and Susceptibility to LLM Sycophancy."</li>
+                <li>Upoma, Shahrin, <strong>Sangwon Ju</strong>, and Khaldoun AbouAssi. "Identity Congruence and Donor Behavior."</li>
+                <li><strong>Ju, Sangwon</strong>. "A Comparison of Between-Subjects and Within-Subjects Experimental Designs."</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-2 d-none d-lg-block">
+        <div id="navbar-sections" class="nav nav-pills flex-column sticky-top" style="top: 80px">
+            <a class="nav-link d-block" href="#published">Published</a>
+            <a class="nav-link d-block" href="#under-review">Under Review</a>
+            <a class="nav-link d-block" href="#in-progress">In Progress</a>
+        </div>
+    </div>
+</div>
