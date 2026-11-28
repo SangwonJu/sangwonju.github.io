@@ -1504,3 +1504,16 @@ html body nav.site-nav .navbar-nav .nav-link {
         white-space: nowrap;
     }
 }
+
+/* CV on phones and tablets: pages drawn by PDF.js, one under another */
+.cv-pages .cv-page {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 12px;
+    border: 1px solid #e1e1e1;
+    background: #ffffff;
+}
+.cv-pages-fallback {
+    padding: 1rem 0;
+}

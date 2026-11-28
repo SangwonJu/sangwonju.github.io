@@ -14,10 +14,70 @@ permalink: /cv/
             <span class="text-muted small">Last updated December 2026</span>
             <a class="btn btn-dark btn-sm rounded-pill ml-auto px-3" href="{{ cv_pdf }}" download="CV_Sangwon_Ju.pdf"><span class="icon icon-download" aria-hidden="true"></span> Download PDF</a>
         </div>
-        <div class="bg-white shadow-sm rounded-xl overflow-hidden cv-frame">
+        <div class="bg-white shadow-sm rounded-xl overflow-hidden cv-frame" id="cv-frame">
             <object data="{{ cv_pdf }}?v={{ cv_ver }}#view=FitH&amp;navpanes=0" type="application/pdf" title="Sangwon Ju CV">
                 <p class="p-4 mb-0">Your browser can't show the PDF here. <a href="{{ cv_pdf }}" download="CV_Sangwon_Ju.pdf">Download the CV</a> instead.</p>
             </object>
         </div>
+        <!-- Phones and tablets cannot show an embedded PDF, so PDF.js draws each page instead -->
+        <div class="cv-pages" id="cv-pages" hidden aria-label="Sangwon Ju CV"></div>
+        <p class="cv-pages-fallback" id="cv-pages-fallback" hidden>The CV could not be shown here. <a href="{{ cv_pdf }}" download="CV_Sangwon_Ju.pdf">Download the PDF</a> instead.</p>
     </div>
 </div>
+
+<script>
+(function () {
+    var touch = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+    if (!touch && navigator.pdfViewerEnabled !== false) return;   // desktop keeps the built-in viewer
+
+    var url = "{{ cv_pdf }}?v={{ cv_ver }}";
+    var frame = document.getElementById('cv-frame');
+    var pages = document.getElementById('cv-pages');
+    var fallback = document.getElementById('cv-pages-fallback');
+    frame.parentNode.removeChild(frame);
+    pages.hidden = false;
+
+    var lib = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
+    var doc = null, drawnWidth = 0;
+
+    function fail() { pages.hidden = true; fallback.hidden = false; }
+
+    function draw() {
+        var width = pages.clientWidth;
+        if (!doc || !width || Math.abs(width - drawnWidth) < 40) return;
+        drawnWidth = width;
+        pages.innerHTML = '';
+        var ratio = Math.min(window.devicePixelRatio || 1, 3);
+        var chain = Promise.resolve();
+        for (var n = 1; n <= doc.numPages; n++) {
+            (function (n) {
+                var canvas = document.createElement('canvas');
+                canvas.className = 'cv-page';
+                canvas.setAttribute('role', 'img');
+                canvas.setAttribute('aria-label', 'CV page ' + n + ' of ' + doc.numPages);
+                pages.appendChild(canvas);
+                chain = chain.then(function () { return doc.getPage(n); }).then(function (page) {
+                    var scale = width / page.getViewport({ scale: 1 }).width;
+                    var view = page.getViewport({ scale: scale * ratio });
+                    canvas.width = Math.floor(view.width);
+                    canvas.height = Math.floor(view.height);
+                    return page.render({ canvasContext: canvas.getContext('2d'), viewport: view }).promise;
+                });
+            })(n);
+        }
+        chain.catch(fail);
+    }
+
+    var script = document.createElement('script');
+    script.src = lib + 'pdf.min.js';
+    script.onerror = fail;
+    script.onload = function () {
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc = lib + 'pdf.worker.min.js';
+        window.pdfjsLib.getDocument(url).promise.then(function (d) { doc = d; draw(); }, fail);
+    };
+    document.head.appendChild(script);
+
+    var timer;
+    window.addEventListener('resize', function () { clearTimeout(timer); timer = setTimeout(draw, 250); });
+})();
+</script>
